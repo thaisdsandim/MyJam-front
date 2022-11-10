@@ -1,9 +1,11 @@
+import { Onboarding } from "./pages/Onboarding";
+
 function App() {
   return (
-    <div>
-
-    </div>
-  )
+    <>
+      <Onboarding />
+    </>
+  );
 }
 
-export default App
+export default App;
