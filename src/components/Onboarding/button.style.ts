@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.button`
   background: #000;
   color: #fff;
   font-weight: 700;
@@ -12,6 +12,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  border: none;
 
   &::before {
     content: "";
@@ -24,18 +25,5 @@ export const Container = styled.div`
   }
   p {
     margin-top: 10px;
-  }
-`;
-
-export const Main = styled.main`
-  .row {
-    margin-top: 40px;
-  }
-  .progressbar {
-    margin-top: 40px;
-    height: 24px;
-  }
-  .title {
-    margin-bottom: 140px;
   }
 `;
