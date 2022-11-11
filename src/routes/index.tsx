@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import Depoimentos from "../components/footerDepoimento/Depoimentos";
+import Depoimentos from "../components/footerDepoimentos/Depoimentos";
 
 const router = createBrowserRouter([
     {
