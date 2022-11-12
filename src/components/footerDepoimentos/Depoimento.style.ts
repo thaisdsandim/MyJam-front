@@ -31,7 +31,8 @@ export const Container = styled.div`
   }
 
   p {
-    background: #161C20;
+    /* background: #161C20; */
+    background: linear-gradient(150deg, grey, #161c20 50%);
 border-radius: 10px;
 padding-top: 80px;
     padding-right: 50px;
