@@ -12,8 +12,8 @@ export const Container = styled.div`
 
   .Titulo {
     display: flex;
-    padding-left: 50%;
-    padding-right: 50%;
+    padding-left: 45%;
+    padding-right: 60%;
 
     justify-content: center;
     align-items: center;
@@ -57,11 +57,4 @@ export const LogoImg = styled.img`
   margin-top: 10px;
 `;
 
-export const Barra = styled.footer`
-width: 100%;
-height: 234px;
-margin-top: 100px;
 
-
-background: #161C20;
-`

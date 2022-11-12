@@ -1,4 +1,4 @@
-import { Container, LogoImg, Barra } from "./Depoimento.style";
+import { Container, LogoImg } from "./Depoimento.style";
 import Icon from "../../assets/images/avatarDepoimentos.png";
 
 const Depoimentos = () => {
@@ -9,7 +9,7 @@ const Depoimentos = () => {
       </div>
       <div className="Row">
         <div className="Col">
-          <LogoImg src={Icon} className="FotoUser" />
+          <LogoImg src={Icon} />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
             voluptas blanditiis impedit nisi quis ratione nemo necessitatibus
@@ -19,7 +19,7 @@ const Depoimentos = () => {
         </div>
 
         <div className="Col">
-          <LogoImg src={Icon} className="FotoUser" />
+          <LogoImg src={Icon} />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
             voluptas blanditiis impedit nisi quis ratione nemo necessitatibus
@@ -28,7 +28,7 @@ const Depoimentos = () => {
           </p>
         </div>
         <div className="Col">
-          <LogoImg src={Icon} className="FotoUser" />
+          <LogoImg src={Icon} />
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
             voluptas blanditiis impedit nisi quis ratione nemo necessitatibus
@@ -37,15 +37,7 @@ const Depoimentos = () => {
           </p>
         </div>
       </div>
-     
     </Container>
-  );
-  
-};
-
-const Footer = () => {
-  return (
-    <Barra></Barra>
   );
 };
 
