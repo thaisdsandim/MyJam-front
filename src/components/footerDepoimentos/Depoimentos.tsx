@@ -1,5 +1,5 @@
-import { Container, LogoImg } from "./Depoimento.style";
-import Icon from "../../assets/images/Beyonce_01.png";
+import { Container, LogoImg, Barra } from "./Depoimento.style";
+import Icon from "../../assets/images/avatarDepoimentos.png";
 
 const Depoimentos = () => {
   return (
@@ -37,7 +37,15 @@ const Depoimentos = () => {
           </p>
         </div>
       </div>
+     
     </Container>
+  );
+  
+};
+
+const Footer = () => {
+  return (
+    <Barra></Barra>
   );
 };
 

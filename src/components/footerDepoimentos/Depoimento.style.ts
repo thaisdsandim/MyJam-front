@@ -12,7 +12,8 @@ export const Container = styled.div`
 
   .Titulo {
     display: flex;
-    padding-left: 46%;
+    padding-left: 50%;
+    padding-right: 50%;
 
     justify-content: center;
     align-items: center;
@@ -21,8 +22,7 @@ export const Container = styled.div`
   .Row {
     display: flex;
     border: 1px solid red;
-
-  }
+      }
 
   .Col {
     display: block;
@@ -56,3 +56,12 @@ export const LogoImg = styled.img`
   margin-bottom: -80px;
   margin-top: 10px;
 `;
+
+export const Barra = styled.footer`
+width: 100%;
+height: 234px;
+margin-top: 100px;
+
+
+background: #161C20;
+`
