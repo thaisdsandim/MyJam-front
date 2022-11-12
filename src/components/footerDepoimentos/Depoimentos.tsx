@@ -5,7 +5,7 @@ const Depoimentos = () => {
   return (
     <Container>
       <div className="Titulo">
-        <h3>depoimentos</h3>
+        <h3>Depoimentos</h3>
       </div>
       <div className="Row">
         <div className="Col">
@@ -27,7 +27,6 @@ const Depoimentos = () => {
             expedita vitae sequi!
           </p>
         </div>
-
         <div className="Col">
           <LogoImg src={Icon} className="FotoUser" />
           <p>

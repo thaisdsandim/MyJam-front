@@ -12,6 +12,7 @@ export const Container = styled.div`
 
   .Titulo {
     display: flex;
+    padding-left: 46%;
 
     justify-content: center;
     align-items: center;
@@ -20,21 +21,25 @@ export const Container = styled.div`
   .Row {
     display: flex;
     border: 1px solid red;
+
   }
 
   .Col {
     display: block;
-    border: 1px solid red;
+    border: 1px solid greenyellow;
   }
 
   p {
     background: #161C20;
 border-radius: 10px;
-    padding: 50px;
-    margin: 30px;
+padding-top: 80px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    margin: 10px;
     color: #ffffff;
-    font-weight: 400;
     font-size: 16px;
+    font-weight: 400px;
     line-height: 19px;
   }
 `;
@@ -48,5 +53,6 @@ export const LogoImg = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -70px;
+  margin-bottom: -80px;
+  margin-top: 10px;
 `;
