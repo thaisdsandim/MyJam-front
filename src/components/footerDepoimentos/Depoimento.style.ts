@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   max-width: 100%;
-  border: 1px solid rgba(197, 197, 197, 1);
+  /* border: 1px solid rgba(197, 197, 197, 1); */
   min-height: 135px;
   flex-wrap: wrap;
   display: flex;
@@ -11,9 +11,7 @@ export const Container = styled.div`
   padding: 20px;
 
   .Titulo {
-    display: flex;
-    padding-left: 45%;
-    padding-right: 60%;
+    display: block;
 
     justify-content: center;
     align-items: center;
@@ -21,12 +19,15 @@ export const Container = styled.div`
 
   .Row {
     display: flex;
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    @media only screen and (max-width: 800px){
+        display: table-row;
+    }
       }
 
   .Col {
     display: block;
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; */
   }
 
   p {
@@ -49,7 +50,7 @@ export const LogoImg = styled.img`
   height: 170px;
   border-radius: 50%;
   overflow: hidden;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: block;
   margin-left: auto;
   margin-right: auto;

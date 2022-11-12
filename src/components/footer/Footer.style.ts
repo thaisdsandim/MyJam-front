@@ -6,10 +6,13 @@ height: 234px;
 margin-top: 80px;
 background: #161C20;
 
-li{
+ul{
+    text-align: end;
     color: #fff;
-    align-self: center;
-    margin-left: 15px;
-    padding-top: 5px;
+    flex: 1;
+    margin-top: 20px;
+    padding: 10px;
+    padding-top: 150px;
+    padding-right:40px;
 }
 `
