@@ -1,5 +1,5 @@
 import { Container, LogoImg } from "./Depoimento.style";
-import Icon from "./Beyonce_01.png";
+import Icon from "../../assets/images/Beyonce_01.png";
 
 const Depoimentos = () => {
   return (
