@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/home";
-import { OnBoarding } from "../pages/Onboarding";
+import { OnBoarding } from "../pages/onboarding";
 
 const router = createBrowserRouter([
   {

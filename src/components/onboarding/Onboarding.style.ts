@@ -1,19 +1,25 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  max-width: 1080px;
+  background: #fff;
   color: white;
   height: 100vh;
   padding-top: 45px;
+  overflow: hidden;
+  background-color: #1e1e1e;
+ 
 
-  h1 {
+  .progress-container {
+    width: 1080px;
+
+  }
+
+  .onboarding-title {
     margin-top: 50px;
     margin-bottom: 120px;
   }
 
   .progress {
-    margin-right: 100px;
-    width: 1080px;
     height: 25px;
     background-color: #fff;
     border-radius: 30px;
@@ -22,7 +28,6 @@ export const Container = styled.div`
 
   .percent {
     margin-left: 0px;
-    width: 25%;
     height: 20px;
     background-image: linear-gradient(
       -45deg,
