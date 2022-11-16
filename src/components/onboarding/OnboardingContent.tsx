@@ -1,33 +1,34 @@
-// import { OnboardingBar } from "./OnboardingBar.style";
+import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { Container } from "./Onboarding.style";
 import { OnboardingButton } from "./OnboardingButton.style";
 import ArrowLeft from "../../assets/images/ArrowLeft.png";
 
 type OnBoardingContentProps = {
   page: number;
+  title: string[];
   onClick: () => void;
 };
 
 function OnBoardingContent(props: OnBoardingContentProps) {
   return (
-    <Container className="d-flex flex-column align-items-center justity-content-center">
-      <div className="row text-center">
-        <div className="col md-6 ">
-          <h1>O que você quer aprender hoje?</h1>
-          <span>Toque em um dos instrumentos pra continuar</span>
+    <Container className="d-flex flex-column align-items-center">
+      <div className="row  align-items-center">
+        <div className="col-1">
+          <img src={ArrowLeft} alt="Arrow, previous page." />
+        </div>
+        <div className="col-11 ">
+          <div className="progress d-flex align-items-center">
+            <div className="percent"></div>
+          </div>
         </div>
       </div>
-      <p
-        style={{
-          margin: "30px 0",
-        }}
-      >
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga mollitia
-        facere molestiae doloribus laudantium deserunt repellat fugiat inventore
-        commodi minus nobis, quaerat voluptatibus aliquid alias voluptas, iure
-        atque dolore accusantium.
-      </p>
-      <OnboardingButton onClick={props.onClick}>Próximo</OnboardingButton>
+      <div className="row justify-content-center align-items-center text-center">
+        <div className="col-md-auto">
+          <h1>Você já tem alguma experiência com o violão? </h1>
+        </div>
+      </div>
+      <OnboardingButton onClick={props.onClick}>{props.title}</OnboardingButton>
+      <OnboardingButton onClick={props.onClick}>{props.title}</OnboardingButton>
     </Container>
   );
 }

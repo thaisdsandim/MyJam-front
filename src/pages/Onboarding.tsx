@@ -1,6 +1,5 @@
 import { useState } from "react";
 import OnBoardingContent from "../components/onboarding/OnboardingContent";
-// import { OnboardingBar } from "../components/onboarding/OnboardingBar.style";
 
 export function OnBoarding() {
   const [page, setPage] = useState(0);
@@ -32,21 +31,40 @@ export function OnBoarding() {
   }
 
   return (
-    <div
-      style={{
-        maxWidth: 1200,
-        margin: "30px auto",
-      }}
-    >
-      {/* <h1><OnboardingBar/> {Number((page * 100) / 3).toFixed(2)}</h1> */}
+    <div className="">
+      <h1 style={{ color: "white" }}> {Number((page * 100) / 3).toFixed(2)}</h1>
 
-      {page === 0 && <OnBoardingContent page={page} onClick={proximaPagina} />}
+      {page === 0 && (
+        <OnBoardingContent
+          title={["Teste"]}
+          page={page}
+          onClick={proximaPagina}
+        />
+      )}
 
-      {page === 1 && <OnBoardingContent page={page} onClick={proximaPagina} />}
+      {page === 1 && (
+        <OnBoardingContent
+          title={["Teste"]}
+          page={page}
+          onClick={proximaPagina}
+        />
+      )}
 
-      {page === 2 && <OnBoardingContent page={page} onClick={proximaPagina} />}
+      {page === 2 && (
+        <OnBoardingContent
+          title={["Teste"]}
+          page={page}
+          onClick={proximaPagina}
+        />
+      )}
 
-      {page === 3 && <OnBoardingContent page={page} onClick={proximaPagina} />}
+      {page === 3 && (
+        <OnBoardingContent
+          title={["Teste"]}
+          page={page}
+          onClick={proximaPagina}
+        />
+      )}
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const OnboardingButton = styled.button`
+  margin-bottom: 45px;
   background: linear-gradient(
     91.88deg,
     rgba(116, 116, 116, 0) 30.88%,
@@ -11,9 +12,8 @@ export const OnboardingButton = styled.button`
   backdrop-filter: blur(10px);
   border-radius: 100px;
   width: 420px;
-  height: 30px;
+  height: 70px;
   color: #ffffff;
-  font-family: "Inter";
   font-weight: 700;
   font-size: 24px;
 `;
