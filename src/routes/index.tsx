@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import Slider from "../components/slideDepoimento/SliderDepoimento";
 import Home from "../pages/home";
-import { OnBoarding } from "../pages/onboarding";
+import { OnBoarding } from "../pages/Onboarding";
 
 const router = createBrowserRouter([
   {

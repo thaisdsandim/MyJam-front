@@ -4,11 +4,11 @@ import Slider from "../components/slideDepoimento/SliderDepoimento";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <Depoimentos />
       <Slider />
       <Footer />
-    </div>
+    </>
   );
 };
 
