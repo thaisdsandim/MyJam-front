@@ -6,9 +6,9 @@ import {
   OnBoardingPractice,
   OnBoardingLearn,
 } from "../components/onboarding/OnboardingContent";
-import { OnboardingBar } from "../components/onboarding/OnboardingBar";
 import { Container } from "../components/onboarding/Onboarding.style";
 import ArrowLeft from "../assets/images/ArrowLeft.png";
+import { OnboardingBar } from "../components/progressBar/MyJamBar";
 
 export function OnBoarding() {
   const [page, setPage] = useState(0);
@@ -36,20 +36,7 @@ export function OnBoarding() {
 
   return (
     <Container className="d-flex flex-column align-items-center">
-      {/* <h1 style={{ color: "white" }}> {Number((page * 100) / 3).toFixed(2)}</h1> */}
-      <div className="progress-container row">
-        <div className=" col-1">
-          <img src={ArrowLeft} alt="Arrow, previous page." />
-        </div>
-        <div className=" col-11 ">
-          <div className="progress d-flex align-items-center">
-            <div
-              className="percent"
-              style={{ color: "white", width: (page * 100) / 4 + "%" }}
-            ></div>
-          </div>
-        </div>
-      </div>
+      <OnboardingBar size={{ width: (page * 100) / 4 + "%" }} />
 
       {page === 0 && <OnBoardingHome page={page} onClick={proximaPagina} />}
 
