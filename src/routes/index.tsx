@@ -12,10 +12,10 @@ const router = createBrowserRouter([
     path: "/onboarding",
     element: <OnBoarding />,
   },
-  {
-    path: "/slider",
-    element: <Slider />,
-  },
+  // {
+  //   path: "/slider",
+  //   element: <Slider />,
+  // },
 ]);
 
 export default router;

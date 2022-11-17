@@ -4,10 +4,9 @@
   padding: 0;
   box-sizing: border-box;
   margin: 0 auto;
-<<<<<<< HEAD
+
   /* background-color: #1e1e1e; */
-=======
->>>>>>> 6fa9ec863eeb80bbf6062dee5b7629a5eef831b8
+
 }
 #root, body {
   height: 100vh;
