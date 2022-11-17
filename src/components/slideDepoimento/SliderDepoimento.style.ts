@@ -1,34 +1,10 @@
 // Import Swiper styles
 import styled from "styled-components";
 
-// export const BackgroundDep = styled.div`
-//   background-image: url("src/assets/images/backgroundDep.png");
-//   display: block;
-//   height: 100%;
-//   width: 100%;
-//   .titulo {
-//     justify-content: space-between;
-//     align-items: center;
-//     margin-left: 40%;
-//     /* margin-top: -50px;
-//   margin-bottom: 50px; */
-//     width: 238px;
-//     height: 47px;
-//     left: 150px;
-//     top: 60px;
-
-//     font-family: "Roboto";
-//     font-style: normal;
-//     font-weight: 600;
-//     font-size: 40px;
-//     line-height: 47px;
-//     color: #f8f8f8;
-//     padding: 60px;
-//   }
-// `;
-
 export const SliderD = styled.div`
-background-image: url("src/assets/images/backgroundDep.png");
+
+background-image: url("src/assets/images/backgroundDep.png") !important;
+
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -40,13 +16,14 @@ background-image: url("src/assets/images/backgroundDep.png");
     width: 70%;
     height: 60%;
     margin: 0 auto;
+    
+    
   }
 
   .swiper-slide {
     text-align: center;
     font-size: 30px;
-
-    color: #ffffff;
+        color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,6 +34,7 @@ background-image: url("src/assets/images/backgroundDep.png");
     width: 100%;
     height: 100%;
     object-fit: cover;
+  
   }
 
   .fotoDepoimento {
@@ -81,6 +59,7 @@ export const Informacoes = styled.div`
   padding: 10px;
   line-height: 20px;
   align-content: flex-start;
+  
   p {
     margin-top: 1px;
     margin-bottom: 0px;

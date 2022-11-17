@@ -14,7 +14,7 @@ import Avatar from "../../assets/images/Avatar-maker.png";
 const Slider = () => {
   return (
     <>
-      {/* <div className="titulo">Depoimentos</div> */}
+     
       <SliderD>
         <Swiper
           spaceBetween={30}
