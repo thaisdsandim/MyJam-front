@@ -7,11 +7,9 @@ export const Container = styled.div`
   padding-top: 45px;
   overflow: hidden;
   background-color: #1e1e1e;
- 
 
   .progress-container {
     width: 1080px;
-
   }
 
   .onboarding-title {
@@ -21,7 +19,7 @@ export const Container = styled.div`
 
   .progress {
     height: 25px;
-    background-color: #fff;
+    background-color: rgba(217, 217, 230, 0.8);
     border-radius: 30px;
     padding: 5px;
   }
@@ -29,11 +27,8 @@ export const Container = styled.div`
   .percent {
     margin-left: 0px;
     height: 20px;
-    background-image: linear-gradient(
-      -45deg,
-      rgba(131, 33, 177, 1) 25%,
-      rgba(199, 42, 37, 1) 75%
-    );
+    background-color: rgba(108, 94, 230, 0.8);
     border-radius: 20px;
+    display: block;
   }
 `;

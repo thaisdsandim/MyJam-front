@@ -7,6 +7,11 @@ type OnBoardingContentProps = {
 };
 
 export function OnBoardingHome(props: OnBoardingContentProps) {
+  function Teste(text: string) {
+    console.log("Qq coisa" + text);
+    props.onClick();
+  }
+
   return (
     <div className="d-flex flex-column align-items-center justify-content-center">
       <div className="row justify-content-center align-items-center text-center">
@@ -16,8 +21,10 @@ export function OnBoardingHome(props: OnBoardingContentProps) {
           </h1>
         </div>
       </div>
-      <OnboardingButton onClick={props.onClick}>Nenhuma</OnboardingButton>
-      <OnboardingButton onClick={props.onClick}>
+      <OnboardingButton onClick={() => Teste("Nenhuma")}>
+        Nenhuma
+      </OnboardingButton>
+      <OnboardingButton  onClick={() => Teste("Alguma experiência")}>
         Alguma experiência
       </OnboardingButton>
     </div>
