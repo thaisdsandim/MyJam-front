@@ -15,23 +15,23 @@ const Aulas = () => {
         <ul>
           <li>
             {" "}
-            <img src={Violao} alt="" />{" "}
+            <img src={Violao} alt="Violao" />{" "}
           </li>
           <li>
             {" "}
-            <img src={Guitarra} alt="" />{" "}
+            <img src={Guitarra} alt="Guitarra" />{" "}
           </li>
           <li>
             {" "}
-            <img src={Baixo} alt="" />{" "}
+            <img src={Baixo} alt="Baixo" />{" "}
           </li>
           <li>
             {" "}
-            <img src={Bateria} alt="" />{" "}
+            <img src={Bateria} alt="Bateria" />{" "}
           </li>
           <li>
             {" "}
-            <img src={Teclado} alt="" />{" "}
+            <img src={Teclado} alt="Teclado" />{" "}
           </li>
         </ul>
       </div>
