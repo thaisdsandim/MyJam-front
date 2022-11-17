@@ -2,7 +2,9 @@
 import styled from "styled-components";
 
 export const SliderD = styled.div`
-background-image: url("src/assets/images/backgroundDep.png");
+
+background-image: url("src/assets/images/backgroundDep.png") !important;
+
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -14,6 +16,7 @@ background-image: url("src/assets/images/backgroundDep.png");
     width: 70%;
     height: 60%;
     margin: 0 auto;
+    
     
   }
 
@@ -56,6 +59,7 @@ export const Informacoes = styled.div`
   padding: 10px;
   line-height: 20px;
   align-content: flex-start;
+  
   p {
     margin-top: 1px;
     margin-bottom: 0px;
