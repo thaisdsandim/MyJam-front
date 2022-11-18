@@ -3,7 +3,9 @@ import styled from "styled-components";
 
 export const SliderD = styled.div`
 
-background-image: url("src/assets/images/backgroundDep.png") !important;
+background-image: url("src/assets/images/backgroundDep.png");
+
+background-size: cover;
 
   margin: 0 auto;
   display: flex;
@@ -13,9 +15,10 @@ background-image: url("src/assets/images/backgroundDep.png") !important;
   height: 100%;
 
   .swiper {
-    width: 70%;
+    width: 50%;
     height: 60%;
     margin: 0 auto;
+    display : block;
     
     
   }
@@ -45,10 +48,10 @@ background-image: url("src/assets/images/backgroundDep.png") !important;
     height: 100%;
     img {
       overflow: hidden;
-      border: 3px solid #6c5ece;
+      border: 2px solid #6c5ece;
       border-radius: 50%;
-      width: 88px;
-      height: 88px;
+      width: 90px;
+      height: 90px;
       margin-right: 0px;
     }
   }
@@ -79,7 +82,7 @@ export const Informacoes = styled.div`
   }
 `;
 export const Depoimento = styled.div`
-  width: 640px;
+  width: 540px;
   height: 114px;
   margin-bottom: 40px;
   h3 {
