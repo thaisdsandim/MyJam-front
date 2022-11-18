@@ -1,56 +1,97 @@
 import { useState } from "react";
 import {
+  OnBoardingComponent,
+  OnBoardingFinish,
   OnBoardingHome,
-  OnBoardingExperience,
-  OnBoardingMusicalStyle,
-  OnBoardingPractice,
-  OnBoardingLearn,
 } from "../components/onboarding/OnboardingContent";
 import { Container } from "../components/onboarding/Onboarding.style";
-import ArrowLeft from "../assets/images/ArrowLeft.png";
 import { OnboardingBar } from "../components/progressBar/MyJamBar";
 
 export function OnBoarding() {
   const [page, setPage] = useState(0);
   const [isFinish, setIsFinish] = useState(false);
 
-  function voltarPagina() {
+  function previousPage() {
     setPage(page - 1);
   }
 
-  function proximaPagina() {
+  function nextPage() {
     setPage(page + 1);
 
-    if (page >= 3) {
-      setIsFinish(true);
+    if (page >= 5) {
+      setPage(page + 1);
+
+      setTimeout(() => setIsFinish(true), 1000);
     }
   }
 
   if (isFinish) {
-    return (
-      <div>
-        <h1>Completou</h1>
-      </div>
-    );
+    return <OnBoardingFinish />;
   }
 
   return (
     <Container className="d-flex flex-column align-items-center">
-      <OnboardingBar size={{ width: (page * 100) / 4 + "%" }} />
-
-      {page === 0 && <OnBoardingHome page={page} onClick={proximaPagina} />}
+      <OnboardingBar
+        onClick={previousPage}
+        size={{ width: (page * 100) / 6 + "%" }}
+      />
+      {page === 0 && (
+        <OnBoardingHome
+          page={page}
+          onClick={nextPage}
+          title={["Nenhuma", "Alguma experiência"]}
+        />
+      )}
 
       {page === 1 && (
-        <OnBoardingExperience page={page} onClick={proximaPagina} />
+        <OnBoardingComponent
+          page={page}
+          onClick={nextPage}
+          title={["Nenhuma", "Alguma experiência"]}
+        />
       )}
 
       {page === 2 && (
-        <OnBoardingMusicalStyle page={page} onClick={proximaPagina} />
+        <OnBoardingComponent
+          page={page}
+          onClick={nextPage}
+          title={[
+            "Uma vez na semana",
+            "Duas vezes na semana",
+            "Apenas nos fins de semana",
+            "Todos os dias",
+          ]}
+        />
       )}
 
-      {page === 3 && <OnBoardingPractice page={page} onClick={proximaPagina} />}
+      {page === 3 && (
+        <OnBoardingComponent
+          page={page}
+          onClick={nextPage}
+          title={["Rock", "Pop", "Música brasileira", "Jazz", "Blues"]}
+        />
+      )}
 
-      {page === 4 && <OnBoardingLearn page={page} onClick={proximaPagina} />}
+      {page === 4 && (
+        <OnBoardingComponent
+          page={page}
+          onClick={nextPage}
+          title={[
+            "Uma vez na semana",
+            "Duas vezes na semana",
+            "Apenas nos fins de semana",
+            "Todos os dias",
+          ]}
+        />
+      )}
+
+      {page === 5 && (
+        <OnBoardingComponent
+          page={page}
+          onClick={nextPage}
+          title={["Aprender o básico", "Tocar em eventos", "O máximo possível"]}
+        />
+      )}
     </Container>
   );
 }
