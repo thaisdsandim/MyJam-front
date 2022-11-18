@@ -1,5 +1,8 @@
 import "./NavBarListaDeLicoes.style";
 import { Nav, Logo, Hamburguer, Menu, MenuLink } from "./NavBarListaDeLicoes.style";
+import IconMusic from "../../assets/images/ListaDeLicoes/musics_icon.png";
+import IconPerfil from "../../assets/images/ListaDeLicoes/perfil.png";
+
 
 
 const NavBarListaDeLicoes = () => {
@@ -14,9 +17,8 @@ const NavBarListaDeLicoes = () => {
                 <span />
             </Hamburguer>
             <Menu>
-                <MenuLink href="">Notas</MenuLink>
-                <MenuLink href="">Músicas</MenuLink>
-                <MenuLink href="">Perfil</MenuLink>
+                <MenuLink src={IconMusic}/>
+                <MenuLink src={IconPerfil}/>
             </Menu>
       </Nav>
     );

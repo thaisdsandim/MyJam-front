@@ -2,26 +2,26 @@ import styled from "styled-components";
 
 
 export const Nav = styled.div`
-    padding: 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: yellow;
+    background-color: #222B35;
+    box-shadow: 0 10px 10px rgba(0,0,0.025); 
+
 `;
 
 export const Hamburguer = styled.div`
 `;
 
-export const MenuLink = styled.a`
-    padding: 1rem 2rem;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    color:  #161C20;
-    font-weight: 900;
-    transition: all 0,3s ease-in;
-    font-size: 0.5rem;
+export const MenuLink = styled.img`
+    padding: 1rem 0.7rem;
+    @media only screen and (max-width: 600px){
+        width: 80%;
+        padding: 0rem 2rem;
+    
+    }
+    
 
     
 
@@ -29,17 +29,26 @@ export const MenuLink = styled.a`
 
 export const Menu = styled.div`
     display: flex;
-    justify-content: space-between;
     align-items: center;
     position: relative;
+    margin: 0;
+    padding-right: 4rem;
+
 `;
 
 export const Logo = styled.a`
-    padding: 1rem 0;
-    color:  #161C20;
+    padding: 1rem 11rem;
+    color:  #ffffff;
     text-decoration: none;
     font-weight: 900;
-    font-size: 1.7rem;
+    font-size: 50px;
+    margin: 0;
+
+    @media only screen and (max-width: 800px){
+        text-align: center;
+        padding: 1rem 6rem;   
+    }
+
 
 `;
 
