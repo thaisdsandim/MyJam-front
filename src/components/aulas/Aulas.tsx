@@ -3,10 +3,11 @@ import Guitarra from '../../assets/images/aulas/Guitarra.png'
 import Baixo from '../../assets/images/aulas/Baixo.png'
 import Bateria from '../../assets/images/aulas/Bateria.png'
 import Teclado from '../../assets/images/aulas/Teclado.png'
-import { AulasC } from './Aulas.style'
+import { AulasC, LightBG } from './Aulas.style'
 
 const Aulas = () => {
   return (
+    <LightBG>
     <AulasC>
       <div>
         <h3>O que você aprender no MyJam</h3>
@@ -36,6 +37,7 @@ const Aulas = () => {
         </ul>
       </div>
     </AulasC>
+    </LightBG>
   );
 };
 

@@ -20,7 +20,7 @@ export const SectionCard = styled.div `
     justify-content: center;
     display: flex;
     max-width: 1080px;
-    margin: 3rem auto;
+    
 
     
 
@@ -46,9 +46,9 @@ export const SectionCard = styled.div `
     .number {
 
         font-size: 25px;
-        border: solid 1px #6C5ECE;;
+        border: solid 1px #6C5ECE;
         border-radius: 50%;
-        padding: 0 10px 0px ;
+        padding: 0 8px 0px ;
         margin: 0 0rem 2rem 0
 
     }
