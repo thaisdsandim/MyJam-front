@@ -5,7 +5,7 @@ width: 100%;
 height: 200px;
 background: #6C5ECE;
 border: 1px solid ;
-border-top: 34px solid #1e1e1e;
+/* border-top: 34px solid #1e1e1e; */
 
 ul{
     text-align: end;

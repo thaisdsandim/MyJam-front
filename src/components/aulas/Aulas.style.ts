@@ -1,16 +1,21 @@
 import styled from "styled-components";
-import background from '../../assets/images/aulas/backgound.jpeg';
+// import background from '../../assets/images/aulas/background.jpg';
+
+export const LightBG = styled.div `
+  background: #2A3341;
+  padding-top: 2rem;
+`
 
 export const AulasC = styled.div`
-  background-image: url(${background});
-  height: 100%;
+
+  height: 70vh;
   width: 100%;
 
   h3 {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 47px;
     text-align: center;
     color: #ffffff;

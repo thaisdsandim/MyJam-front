@@ -1,16 +1,17 @@
 import ArrowLeft from "../../assets/images/ArrowLeft.png";
 
-interface OnboardingBarProps {
+export interface OnboardingBarProps {
   size: {
     width: string;
   };
+  onClick:() => void;
 }
 
 export function OnboardingBar(props: OnboardingBarProps) {
   return (
     <div className="progress-container row">
       <div className=" col-1">
-        <img src={ArrowLeft} alt="Arrow, previous page." />
+        <img src={ArrowLeft} alt="Arrow, previous page." onClick={props.onClick} />
       </div>
       <div className=" col-11 ">
         <div className="progress d-flex align-items-center">
