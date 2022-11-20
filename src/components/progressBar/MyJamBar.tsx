@@ -4,14 +4,18 @@ export interface OnboardingBarProps {
   size: {
     width: string;
   };
-  onClick:() => void;
+  onClick: () => void;
 }
 
-export function OnboardingBar(props: OnboardingBarProps) {
+export function MyJamBar(props: OnboardingBarProps) {
   return (
     <div className="progress-container row">
       <div className=" col-1">
-        <img src={ArrowLeft} alt="Arrow, previous page." onClick={props.onClick} />
+        <img
+          src={ArrowLeft}
+          alt="Arrow, previous page."
+          onClick={props.onClick}
+        />
       </div>
       <div className=" col-11 ">
         <div className="progress d-flex align-items-center">
