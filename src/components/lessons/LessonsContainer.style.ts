@@ -16,9 +16,14 @@ export const Container = styled.div`
     height: 440px;
     width: 1300px;
   }
-  .info-page{ 
+  .info-page {
     margin-top: 50px;
     margin: 0 auto;
+    width: 1300px;
+    justify-content: space-between;
+  }
+  .info-col{
+    margin-left:0px;
     
   }
   .line-bottom {
@@ -26,7 +31,6 @@ export const Container = styled.div`
   }
 
   hr {
-
     color: #000;
     width: 100%;
     background-image: linear-gradient(#6c5ece, #6c5ece);
