@@ -5,7 +5,7 @@ import {
   OnBoardingHome,
 } from "../components/onboarding/OnboardingContent";
 import { Container } from "../components/onboarding/Onboarding.style";
-import { OnboardingBar } from "../components/progressBar/MyJamBar";
+import { MyJamBar } from "../components/progressBar/MyJamBar";
 
 export function OnBoarding() {
   const [page, setPage] = useState(0);
@@ -31,7 +31,7 @@ export function OnBoarding() {
 
   return (
     <Container className="d-flex flex-column align-items-center">
-      <OnboardingBar
+      <MyJamBar
         onClick={previousPage}
         size={{ width: (page * 100) / 6 + "%" }}
       />

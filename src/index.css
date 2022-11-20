@@ -8,8 +8,8 @@
   /* background-color: #1e1e1e; */
 
 }
-#root, body {
-  height: 100vh;
+#root, body, html {
+  
   margin: 0;
   padding: 0;
 }
