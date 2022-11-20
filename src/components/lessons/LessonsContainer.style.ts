@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const Container = styled.div`
   height: 100vh;
   width: 100%;
+  background-color: #222b35;
+  overflow: hidden;
 
   button {
     position: relative;
@@ -22,12 +24,14 @@ export const Container = styled.div`
     width: 1300px;
     justify-content: space-between;
   }
-  .info-col{
-    margin-left:0px;
-    
+  .info-col {
+    margin-left: 0px;
   }
   .line-bottom {
-    margin-top: 200px;
+    margin-top: 210px;
+  }
+  .line-top {
+    margin-top: 40px;
   }
 
   hr {
@@ -39,7 +43,7 @@ export const Container = styled.div`
   }
   h1 {
     color: #fff;
-
     margin-bottom: 40px;
+    margin-top: 60px;
   }
 `;

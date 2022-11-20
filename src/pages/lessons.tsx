@@ -3,6 +3,7 @@ import Guitar from "../assets/lessons/h-guitar.png";
 import { useState } from "react";
 import {
   LessonsContent,
+  LessonsFinish,
   LessonsHome,
 } from "../components/lessons/LessonsContent";
 import { MyJamBar } from "../components/progressBar/MyJamBar";
@@ -28,7 +29,8 @@ export function Lessons() {
   }
 
   if (isFinish) {
-    return <h1></h1>;
+    return (<LessonsFinish/>)
+
   }
 
   return (
