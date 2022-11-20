@@ -1,12 +1,12 @@
 import styled from "styled-components";
 
 export const LessonContainer = styled.div`
-color: white;
+  color: white;
   height: 100vh;
   padding-top: 45px;
   overflow: hidden;
   width: 100%;
-  background-color: #222B35;
+  background-color: #222b35;
 
   .progress-container {
     width: 1080px;
@@ -27,5 +27,5 @@ color: white;
     border-radius: 20px;
     display: block;
   }
+`;
 
-`

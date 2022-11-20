@@ -19,10 +19,11 @@ export function LessonsContent(props: LessonContainerProps) {
 
   return (
     <Container className="d-flex flex-column align-items-center">
+      <hr className="line-top"/>
       <h1>{props.title}</h1>
       <img src={props.image} alt={props.description} />
 
-      <hr />
+      <hr className="line-bottom"/>
       <div className="d-flex">
         {props?.buttonTitle?.map((item, index) => (
           <LessonsButton
@@ -44,7 +45,7 @@ export function LessonsHome(props: LessonContainerProps) {
 
   return (
     <Container className="d-flex flex-column  align-items-center">
-      <hr />
+      <hr className="line-top"/>
       <h1>Contagem de dedos</h1>
       <img src={Hand} alt="Fingers on the guitar" />
 
@@ -77,4 +78,13 @@ export function LessonsHome(props: LessonContainerProps) {
       </div>
     </Container>
   );
+}
+
+export function LessonsFinish() {
+  return (
+    <Container className="d-flex justify-content-center align-items-center">
+    <h1 style={{color:"white"}}>Parabéns!</h1>
+  </Container>
+  )
+
 }
