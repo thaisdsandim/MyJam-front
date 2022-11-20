@@ -1,13 +1,13 @@
 import ArrowLeft from "../../assets/images/ArrowLeft.png";
 
-export interface OnboardingBarProps {
+export interface MyJamBarProps {
   size: {
     width: string;
   };
   onClick: () => void;
 }
 
-export function MyJamBar(props: OnboardingBarProps) {
+export function MyJamBar(props: MyJamBarProps) {
   return (
     <div className="progress-container row">
       <div className=" col-1">
