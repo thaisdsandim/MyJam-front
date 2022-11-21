@@ -3,7 +3,7 @@ import Aulas from "../components/aulas/Aulas";
 import Slider from "../components/slideDepoimento/SliderDepoimento";
 import Home from "../pages/home";
 import { Lessons } from "../pages/lessons";
-import { OnBoarding } from "../pages/Onboarding";
+import { OnBoarding } from "../pages/onboarding";
 
 const router = createBrowserRouter([
   {
