@@ -14,7 +14,7 @@ import Avatar from "../../assets/images/Avatar-maker.png";
 const Slider = () => {
   return (
     <>
-     
+     <div>
       <SliderD>
         <Swiper
           spaceBetween={30}
@@ -83,7 +83,9 @@ const Slider = () => {
           </SwiperSlide>
         </Swiper>
       </SliderD>
+      </div>
     </>
+    
   );
 };
 

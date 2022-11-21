@@ -3,16 +3,15 @@ import styled from "styled-components";
 
 export const SliderD = styled.div`
 
-background-image: url("src/assets/images/backgroundDep.png");
+background-image: url("src/assets/images/backgroundDep.png") ;
 
 background-size: cover;
-
-  margin: 0 auto;
+ 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 100% ;
+  height: 100% ;
 
   .swiper {
     width: 50%;
