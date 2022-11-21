@@ -5,10 +5,10 @@ import {
   LessonsContent,
   LessonsFinish,
   LessonsHome,
-} from "../components/lessons/LessonsContent";
+} from "../components/lessons/lessons-2/LessonsContent";
 import { MyJamBar } from "../components/progressBar/MyJamBar";
-import "../components/lessons/LessonsContainer.style";
-import { LessonContainer } from "../components/lessons/LessonsPageContainer";
+import "../components/lessons/lessons-2/LessonsContainer.style";
+import { LessonContainer } from "../components/lessons/lessons-2/LessonsPageContainer";
 
 export function Lessons() {
   const [page, setPage] = useState(0);
@@ -29,8 +29,7 @@ export function Lessons() {
   }
 
   if (isFinish) {
-    return (<LessonsFinish/>)
-
+    return <LessonsFinish />;
   }
 
   return (
