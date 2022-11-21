@@ -12,7 +12,6 @@ export const Container = styled.div`
     margin-top: 10px;
   }
 
-
   .text-home .col {
     gap: 40px;
   }
@@ -28,10 +27,10 @@ export const Container = styled.div`
     background: #6c5ece;
   }
   .line-bottom {
-    margin-top: 100px;
+    margin-top: 30px;
   }
   .line-top {
-    margin-top: 40px;
+    margin-top: 20px;
   }
 
   hr {
@@ -43,7 +42,7 @@ export const Container = styled.div`
   }
   h1 {
     color: #fff;
-    margin-bottom: 40px;
-    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-top: 30px;
   }
 `;

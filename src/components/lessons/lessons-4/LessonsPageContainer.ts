@@ -8,6 +8,33 @@ export const LessonContainer = styled.div`
   width: 100%;
   background-color: #222b35;
 
+  .container-center {
+    border: 1px solid #6c5ece;
+    border-radius: 20px;
+    padding: 25px 15px;
+    width: 780px;
+    column-gap: 75px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .container-center .cipher-title{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 500;
+  }
+  .container-center ol {
+    margin-bottom: 45px;
+  }
+  .recomendation {
+    margin-top: 40px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    width: 780px;
+  }
+  .recomendation p{
+   margin: 0 auto;
+   padding: 8px 0px;
+  }
   .img-content {
     width: 310px;
     height: 400px;
@@ -19,6 +46,7 @@ export const LessonContainer = styled.div`
 
   .progress-container {
     width: 1080px;
+    
   }
 
   .progress {
