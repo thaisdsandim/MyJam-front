@@ -1,8 +1,5 @@
 import Ciphers from "../../../assets/lessons/cifras-musicais.png";
-import Cifra1 from "../../../assets/lessons/cifra-1.png"
-import Cifra2 from "../../../assets/lessons/cifra-2.png"
-import Cifra3 from "../../../assets/lessons/cifra-3.png"
-import Cifra4 from "../../../assets/lessons/cifra-4.png"
+
 import { LessonsButton, LessonsVoltar } from "../LessonsButton";
 import { Container } from "./LessonsContainer.style";
 
@@ -24,7 +21,7 @@ export function LessonsContent(props: LessonContainerProps) {
     <Container className="d-flex flex-column align-items-center">
       <hr className="line-top" />
       <h1>{props.title}</h1>
-      <img src={props.image} alt={props.description} />
+      <img className="img-content" src={props.image} alt={props.description} />
 
       <hr className="line-bottom" />
       <div className="d-flex">
@@ -49,7 +46,7 @@ export function LessonsHome(props: LessonContainerProps) {
   return (
     <Container className="d-flex flex-column  align-items-center">
       <hr className="line-top" />
-      <h1>Como ler a tal da cifra?</h1>
+      <h1>{props.title}</h1>
       <img className="img-home" src={Ciphers} alt="Fingers on the guitar" />
       <div className="text-home">
         <div className="row d-flex flex-column">
@@ -96,7 +93,7 @@ export function LessonsHome(props: LessonContainerProps) {
       <div>
         <LessonsVoltar>Voltar</LessonsVoltar>
         <LessonsButton onClick={() => HandleOnClick(props.onClick)}>
-          Entendi
+          {props.buttonTitle}
         </LessonsButton>
       </div>
     </Container>

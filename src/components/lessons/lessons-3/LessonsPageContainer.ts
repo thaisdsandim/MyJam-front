@@ -8,6 +8,15 @@ export const LessonContainer = styled.div`
   width: 100%;
   background-color: #222b35;
 
+  .img-content {
+    width: 310px;
+    height: 400px;
+  }
+  .img-home {
+    max-width: 1080px;
+    margin-bottom: 80px;
+  }
+
   .progress-container {
     width: 1080px;
   }
@@ -28,4 +37,3 @@ export const LessonContainer = styled.div`
     display: block;
   }
 `;
-

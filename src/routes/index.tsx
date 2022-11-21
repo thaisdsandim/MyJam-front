@@ -2,7 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import Aulas from "../components/aulas/Aulas";
 import Slider from "../components/slideDepoimento/SliderDepoimento";
 import Home from "../pages/home";
-import { Lessons } from "../pages/lessons";
+import { LessonsTwo } from "../pages/lessonsTwo";
+import { LessonsThree } from "../pages/lessonsThree ";
 import { OnBoarding } from "../pages/onboarding";
 
 const router = createBrowserRouter([
@@ -20,7 +21,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/lessons/2",
-    element: <Lessons />,
+    element: <LessonsTwo />,
+  },
+  {
+    path: "/lessons/3",
+    element: <LessonsThree />,
   },
 ]);
 
