@@ -12,13 +12,7 @@ export const Container = styled.div`
     margin-top: 10px;
   }
 
-  .img-home {
-    max-height: 180px;
-    margin-bottom: 60px;
-  }
-  img {
-    width: 1080px;
-  }
+
   .text-home .col {
     gap: 40px;
   }
