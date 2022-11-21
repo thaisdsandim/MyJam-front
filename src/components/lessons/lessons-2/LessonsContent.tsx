@@ -1,6 +1,6 @@
 import Hand from "../../assets/lessons/hand-position-1.png";
 import { InfoLesson } from "./InfoLesson";
-import { LessonsButton, LessonsVoltar } from "./LessonsButton";
+import { LessonsButton, LessonsVoltar } from "../LessonsButton";
 import { Container } from "./LessonsContainer.style";
 
 interface LessonContainerProps {
