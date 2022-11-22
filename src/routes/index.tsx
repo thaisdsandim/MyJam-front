@@ -8,6 +8,8 @@ import { OnBoarding } from "../pages/Onboarding";
 import { LessonsFour } from "../pages/lessonsFour";
 import { Lessons } from "../pages/lessonsOne";
 
+
+
 const router = createBrowserRouter([
   {
     path: "/home",
@@ -36,11 +38,9 @@ const router = createBrowserRouter([
   {
     path: "/lessons/4",
     element: <LessonsFour />,
-  },
-  {
-    path: "/",
-    element: <Slider />,
-  },
+  }
+  
+  
 ]);
 
 export default router;
