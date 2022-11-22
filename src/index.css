@@ -6,15 +6,15 @@
   margin: 0 auto;
 
   /* background-color: #1e1e1e; */
-
 }
-#root, body, html {
-  
-  margin: 0;
+#root,
+body,
+html {
+  height: 100vh;
+  margin: 0 auto;
   padding: 0;
+  background-color: #222b35;
 }
 button {
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-
-

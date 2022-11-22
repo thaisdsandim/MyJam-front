@@ -17,10 +17,6 @@ const router = createBrowserRouter([
     element: <OnBoarding />,
   },
   {
-    path: "/aula",
-    element: <Aulas />,
-  },
-  {
     path: "/lessons/2",
     element: <LessonsTwo />,
   },

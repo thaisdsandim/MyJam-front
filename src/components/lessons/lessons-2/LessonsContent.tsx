@@ -1,9 +1,9 @@
 import Hand from "../../../assets/lessons/hand-position-1.png";
 import { InfoLesson } from "./InfoLesson";
 import { LessonsButton, LessonsVoltar } from "../LessonsButton";
-import { Container } from "./LessonsContainer.style";
 
-interface LessonContainerProps {
+
+interface LessonsContentProps {
   image: string;
   description: string;
   buttonTitle?: string[];
@@ -12,17 +12,16 @@ interface LessonContainerProps {
   title: string;
 }
 
-export function LessonsContent(props: LessonContainerProps) {
+export function LessonsContent(props: LessonsContentProps) {
   function HandleOnClick(text: string) {
     props.onClick();
   }
 
   return (
-    <Container className="d-flex flex-column align-items-center">
+    <>
       <hr className="line-top" />
       <h1>{props.title}</h1>
-      <img src={props.image} alt={props.description} />
-
+      <img className="img-center" src={props.image} alt={props.description} />
       <hr className="line-bottom" />
       <div className="d-flex">
         {props?.buttonTitle?.map((item, index) => (
@@ -35,19 +34,20 @@ export function LessonsContent(props: LessonContainerProps) {
           </LessonsButton>
         ))}
       </div>
-    </Container>
+    </>
   );
 }
-export function LessonsHome(props: LessonContainerProps) {
+
+export function LessonsHome(props: LessonsContentProps) {
   function HandleOnClick(text: any) {
     props.onClick();
   }
 
   return (
-    <Container className="d-flex flex-column  align-items-center">
+    <>
       <hr className="line-top" />
       <h1>Contagem de dedos</h1>
-      <img src={Hand} alt="Fingers on the guitar" />
+      <img className="img-center" src={Hand} alt="Fingers on the guitar" />
 
       <div className="d-flex row info-page">
         <div className="col-3 d-flex flex-column ">
@@ -69,21 +69,21 @@ export function LessonsHome(props: LessonContainerProps) {
           <InfoLesson background="#6C5ECE" number={6} title="Dedo de apoio" />
         </div>
       </div>
-      <hr />
+      <hr className="line-bottom-home"/>
       <div>
         <LessonsVoltar>Voltar</LessonsVoltar>
         <LessonsButton onClick={() => HandleOnClick(props.onClick)}>
           Entendi
         </LessonsButton>
       </div>
-    </Container>
+    </>
   );
 }
 
 export function LessonsFinish() {
   return (
-    <Container className="d-flex justify-content-center align-items-center">
-      <h1 style={{ color: "white" }}>Parabéns!</h1>
-    </Container>
+    <>
+      <h1 style={{ color: "white", display:"flex", justifyContent:"center", alignItems:"center", height:"100vh"}}>Parabéns!</h1>
+    </>
   );
 }

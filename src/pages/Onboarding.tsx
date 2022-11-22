@@ -18,7 +18,7 @@ export function OnBoarding() {
   function nextPage() {
     setPage(page + 1);
 
-    if (page >= 5) {
+    if (page >= 4) {
       setPage(page + 1);
 
       setTimeout(() => setIsFinish(true), 1000);
@@ -33,13 +33,14 @@ export function OnBoarding() {
     <Container className="d-flex flex-column align-items-center">
       <MyJamBar
         onClick={previousPage}
-        size={{ width: (page * 100) / 6 + "%" }}
+        size={{ width: (page * 100) / 5 + "%" }}
       />
       {page === 0 && (
         <OnBoardingHome
           page={page}
           onClick={nextPage}
-          title={["Nenhuma", "Alguma experiência"]}
+          title="O que você quer aprender hoje?"
+          buttonTitle={["Nenhuma", "Alguma experiência"]}
         />
       )}
 
@@ -47,7 +48,8 @@ export function OnBoarding() {
         <OnBoardingComponent
           page={page}
           onClick={nextPage}
-          title={["Nenhuma", "Alguma experiência"]}
+          title="Você já tem alguma experiência com o violão? "
+          buttonTitle={["Nenhuma", "Alguma experiência"]}
         />
       )}
 
@@ -55,7 +57,8 @@ export function OnBoarding() {
         <OnBoardingComponent
           page={page}
           onClick={nextPage}
-          title={[
+          title="Quantas vezes na semana você pode praticar?"
+          buttonTitle={[
             "Uma vez na semana",
             "Duas vezes na semana",
             "Apenas nos fins de semana",
@@ -68,7 +71,8 @@ export function OnBoarding() {
         <OnBoardingComponent
           page={page}
           onClick={nextPage}
-          title={["Rock", "Pop", "Música brasileira", "Jazz", "Blues"]}
+          title="Qual estilo musical você mais gosta?"
+          buttonTitle={["Rock", "Pop", "Música brasileira", "Jazz", "Blues"]}
         />
       )}
 
@@ -76,20 +80,13 @@ export function OnBoarding() {
         <OnBoardingComponent
           page={page}
           onClick={nextPage}
-          title={[
-            "Uma vez na semana",
-            "Duas vezes na semana",
-            "Apenas nos fins de semana",
-            "Todos os dias",
+          title="O que você quer aprender?"
+          buttonTitle={[
+            "Aprender o básico",
+            "Todas as músicas que gosto",
+            "Tocar em eventos",
+            "O máximo possível",
           ]}
-        />
-      )}
-
-      {page === 5 && (
-        <OnBoardingComponent
-          page={page}
-          onClick={nextPage}
-          title={["Aprender o básico", "Tocar em eventos", "O máximo possível"]}
         />
       )}
     </Container>

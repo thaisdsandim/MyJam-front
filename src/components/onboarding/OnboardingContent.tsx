@@ -13,7 +13,8 @@ import { OnboardingContainer } from "./OnboardingContainer";
 type OnBoardingContentProps = {
   page: number;
   onClick: () => void;
-  title?: string[];
+  buttonTitle?: string[];
+  title: string,
 };
 
 export function OnBoardingComponent(props: OnBoardingContentProps) {
@@ -23,8 +24,8 @@ export function OnBoardingComponent(props: OnBoardingContentProps) {
   }
 
   return (
-    <OnboardingContainer title="Você tem alguma experiência com violão?">
-      {props?.title?.map((item, index) => (
+    <OnboardingContainer title={props.title}>
+      {props?.buttonTitle?.map((item, index) => (
         <OnboardingButton key={index} onClick={() => onClick(item)}>
           {item}
         </OnboardingButton>
@@ -34,7 +35,7 @@ export function OnBoardingComponent(props: OnBoardingContentProps) {
 }
 export function OnBoardingHome(props: OnBoardingContentProps) {
   return (
-    <OnboardingContainer title="Você tem alguma experiência com violão?">
+    <OnboardingContainer title={props.title}>
       <div className="onboarding-home d-flex">
         <img
           src={Guitar}
@@ -55,12 +56,10 @@ export function OnBoardingFinish() {
     <div
       className="d-flex flex-column  align-items-center"
       style={{
-        background: "#1e1e1e",
-        height: "100%",
-        padding: "50px 0px 0px 0px",
+        height: "100vh",
       }}
     >
-      <h1 className="text-white" style={{ margin: "0px 0px 100px 0px" }}>
+      <h1 className="text-white" style={{marginTop:"50px"}}>
         Seu plano de aulas foi criado com sucesso!
       </h1>
       <img src={OnboardingAnimation} alt="Transition image" />
