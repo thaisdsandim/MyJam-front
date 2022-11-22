@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const ContainerD = styled.div`
   max-width: 100%;
   /* border: 1px solid rgba(197, 197, 197, 1); */
   min-height: 135px;
@@ -13,6 +13,7 @@ export const Container = styled.div`
 
   .Titulo {
     display: block;
+    color: #ffffff;
 
     justify-content: center;
     align-items: center;
@@ -48,8 +49,8 @@ padding-top: 80px;
 `;
 
 export const LogoImg = styled.img`
-  width: 170px;
-  height: 170px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   overflow: hidden;
   /* border: 1px solid black; */

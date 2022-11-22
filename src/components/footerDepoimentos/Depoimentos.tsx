@@ -1,9 +1,9 @@
-import { Container, LogoImg } from "./Depoimento.style";
+import { ContainerD, LogoImg } from "./Depoimento.style";
 import Icon from "../../assets/images/avatarDepoimentos.png";
 
 const Depoimentos = () => {
   return (
-    <Container>
+    <ContainerD>
       <div className="Titulo">
         <h3>Depoimentos</h3>
       </div>
@@ -37,7 +37,7 @@ const Depoimentos = () => {
           </p>
         </div>
       </div>
-    </Container>
+    </ContainerD>
   );
 };
 
