@@ -7,8 +7,7 @@ import {
   LessonsHome,
 } from "../components/lessons/lessons-2/LessonsContent";
 import { MyJamBar } from "../components/progressBar/MyJamBar";
-import "../components/lessons/lessons-2/LessonsContainer.style";
-import { LessonContainer } from "../components/lessons/lessons-2/LessonsPageContainer";
+import { LessonContainer } from "../components/lessons/lessons-2/LessonsContainer";
 
 export function LessonsTwo() {
   const [page, setPage] = useState(0);
@@ -54,7 +53,7 @@ export function LessonsTwo() {
           page={page}
           onClick={nextPage}
           title="Qual é esta casa?"
-          buttonTitle={["1", "4", "5"]}
+          buttonTitle={["1", "4","5"]}
           description="Qual é esta casa?"
           image={Guitar}
         />

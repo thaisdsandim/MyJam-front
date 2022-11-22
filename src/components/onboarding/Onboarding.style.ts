@@ -1,12 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-image: url("");
   color: white;
   height: 100vh;
   padding-top: 45px;
-  overflow: hidden;
-  background-color: #1e1e1e;
+  background-color: #222b35;
 
   .progress-container {
     width: 1080px;
