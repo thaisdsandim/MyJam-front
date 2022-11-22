@@ -1,5 +1,8 @@
 import { ContainerD, LogoImg } from "./Depoimento.style";
 import Icon from "../../assets/images/avatarDepoimentos.png";
+import Avatar from "../../assets/images/Ellipse.png";
+import AvatarD from "../../assets/images/Avatar-maker.png";
+
 
 const Depoimentos = () => {
   return (
@@ -9,31 +12,25 @@ const Depoimentos = () => {
       </div>
       <div className="Row">
         <div className="Col">
-          <LogoImg src={Icon} />
+          <LogoImg src={Avatar} />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-            voluptas blanditiis impedit nisi quis ratione nemo necessitatibus
-            velit est doloribus. Aspernatur et quisquam possimus, rem soluta vel
-            expedita vitae sequi!
+          “Poder aprender sem medo de errar e sem me sentir julgada foi
+                  a melhor coisa que poderia ter acontecido!”
           </p>
         </div>
 
         <div className="Col">
-          <LogoImg src={Icon} />
+          <LogoImg src={AvatarD} />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-            voluptas blanditiis impedit nisi quis ratione nemo necessitatibus
-            velit est doloribus. Aspernatur et quisquam possimus, rem soluta vel
-            expedita vitae sequi!
+             “Depois que meu amigo zeca me apresentou esse site nunca mais
+                  deixei de tocar”
           </p>
         </div>
         <div className="Col">
           <LogoImg src={Icon} />
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-            voluptas blanditiis impedit nisi quis ratione nemo necessitatibus
-            velit est doloribus. Aspernatur et quisquam possimus, rem soluta vel
-            expedita vitae sequi!
+          “Depois que meu amigo zeca me apresentou esse site nunca mais
+                  deixei de tocar”
           </p>
         </div>
       </div>

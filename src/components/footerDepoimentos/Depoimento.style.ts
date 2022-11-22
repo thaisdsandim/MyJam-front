@@ -33,6 +33,7 @@ export const ContainerD = styled.div`
   }
 
   p {
+    display: block;
     /* background: #161C20; */
     background: linear-gradient(150deg, grey, #161c20 50%);
 border-radius: 10px;
@@ -52,9 +53,10 @@ export const LogoImg = styled.img`
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  overflow: hidden;
-  /* border: 1px solid black; */
+  /* overflow: hidden; */
+  /* border: 3px solid black; */
   display: block;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -80px;

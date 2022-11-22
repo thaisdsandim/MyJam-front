@@ -10,9 +10,10 @@ const Aulas = () => {
     <LightBG>
     <AulasC>
       <div>
-        <h3>O que você aprender no MyJam</h3>
+        <h3>O que você quer aprender no MyJam?</h3>
       </div>
       <div className='listas'>
+        <div>
         <ul>
           <li>
             {" "}
@@ -35,6 +36,7 @@ const Aulas = () => {
             <img src={Teclado} alt="Teclado" />{" "}
           </li>
         </ul>
+        </div>
       </div>
     </AulasC>
     </LightBG>
