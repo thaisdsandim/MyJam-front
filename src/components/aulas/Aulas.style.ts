@@ -74,7 +74,7 @@ export const AulasC = styled.div`
   .listas li {
     width: 240px;
     height: 240px;
-        border: 1px solid #6c5ece;
+        /* border: 1px solid #6c5ece; */
         @media only screen and (max-width: 730px){
         height: 200px;
         width: 200px;
