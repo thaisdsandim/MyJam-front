@@ -61,21 +61,34 @@ export const SectionCard = styled.div`
   }
 
   .number {
-    font-size: 25px;
     border: solid 1px #6c5ece;
     border-radius: 50%;
     padding: 0 8px 0px;
     margin: 0 0rem 2rem 0;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
   }
 
   .numberCircle p {
     font-size: 25px;
     margin-left: 0;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 38px;
   }
 
   span {
+    font-family: "roboto";
+    font-style: normal;
     color: #f8f8f8;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
   }
 
   hr {
