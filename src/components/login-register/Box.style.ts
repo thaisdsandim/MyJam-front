@@ -4,6 +4,7 @@ export const Box = styled.div`
     display: flex;
     flex-flow: row wrap;
     padding-top: 50px;
+    padding-bottom: 50px;
     .form {
         padding-left: 120px;
         padding-right: 80px;
