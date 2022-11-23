@@ -11,8 +11,6 @@ export const Nav = styled.div`
 
 `;
 
-export const Hamburguer = styled.div`
-`;
 
 export const MenuLink = styled.img`
     padding: 1rem 0.7rem;
@@ -36,7 +34,7 @@ export const Menu = styled.div`
 
 `;
 
-export const Logo = styled.a`
+export const LogoNav = styled.img`
     padding: 1rem 11rem;
     color:  #ffffff;
     text-decoration: none;
@@ -48,7 +46,19 @@ export const Logo = styled.a`
         text-align: center;
         padding: 1rem 6rem;   
     }
+`;
 
+export const Logo = styled.a`
+    padding: 1rem 0rem;
+    color:  #ffffff;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 50px;
+    margin: 0;
 
+    @media only screen and (max-width: 800px){
+        text-align: center;
+        padding: 1rem 0rem;   
+    }
 `;
 
