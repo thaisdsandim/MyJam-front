@@ -7,18 +7,21 @@ export const LightBG = styled.div`
   padding-top: 4px;
   padding-bottom: 4px;
   display: block;
-  /* height: 70%; */
+  height: 65vh;
   flex-wrap: wrap;
   @media only screen and (max-width: 1230px){
-        height: 100%;
+        height: 95vh;
       
   }
   @media only screen and (max-width: 600px){
-        height: 80%;
+        height: 80vh;
   
     }
     @media only screen and (max-width: 390px){
-        height: 100%;
+        height: 105vh;
+    }
+    @media only screen and (max-width: 258px){
+        height: 155vh;
     }
 `;
 
@@ -44,8 +47,8 @@ export const AulasC = styled.div`
     padding: 0px;
     /* display: flex; */
     align-items: center;
-    height: 240px;
-    width: 240px;
+    height: 220px;
+    width: 220px;
     @media only screen and (max-width: 750px){
         height: 200px;
         width: 200px;
@@ -72,8 +75,8 @@ export const AulasC = styled.div`
    
   }
   .listas li {
-    width: 240px;
-    height: 240px;
+    width: 220px;
+    height: 220px;
         /* border: 1px solid #6c5ece; */
         @media only screen and (max-width: 730px){
         height: 200px;

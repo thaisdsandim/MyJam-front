@@ -8,11 +8,11 @@ import Depoimentos from "../components/footerDepoimentos/Depoimentos";
 import faker from "../assets/jsons/Api-test.json"
 import Testimony from "../components/testimony/Testimony"
 
-type HomeProps = {}
+// type HomeProps = {}
+// props: HomeProps
+const Home = () => {
 
-const Home = (props: HomeProps) => {
-
-  const { Testimonys }= faker
+  // const { Testimonys }= faker
 
   return (
     <div>
@@ -26,6 +26,6 @@ const Home = (props: HomeProps) => {
 
 export default Home;
 
-{/* {Testimonys.map ((testimony)=>(
+/* {Testimonys.map ((testimony)=>(
 <Testimony key={testimony.id} id={testimony.id} nome={testimony.nome} profissão={testimony.profissão} post={testimony.post} />
-))} */}
+))} */
