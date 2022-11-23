@@ -1,6 +1,7 @@
 import Guitar from "../../../assets/lessons/v-guitar.png";
-
+import Bg from "../../../assets/lessons/finish.png";
 import { LessonsButton, LessonsVoltar } from "../LessonsButton";
+import { FinishContainer } from "./LessonsContainer";
 
 interface LessonsContentProps {
   image: string;
@@ -116,36 +117,30 @@ export function LessonsContentButtons(props: LessonsContentProps) {
     <>
       <hr className="line-top" />
       <h1>{props.title}</h1>
-      <hr className="line-bottom" />
-      <div className="d-flex flex-column">
+
+      <div className="col-md-2 d-flex flex-column gap-5">
         {props?.buttonTitle?.map((item, index) => (
-          <LessonsButton
-            
-            key={index}
-            onClick={() => HandleOnClick(item)}
-          >
+          <LessonsButton key={index} onClick={() => HandleOnClick(item)}>
             {item}
           </LessonsButton>
         ))}
       </div>
+      <hr className="line-bottom" />
     </>
   );
 }
 
 export function LessonsFinish() {
   return (
-    <>
-      <h1
-        style={{
-          color: "white",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100vh",
-        }}
-      >
-        Parabéns!
-      </h1>
-    </>
+    <FinishContainer >
+      <div className="bg-image">
+        <img src={Bg} alt="" />
+      </div>
+      <div className="bg-text">
+        <h2>Blurred Background</h2>
+        <h1 style={{ fontSize: "50px" }}>I am John Doe</h1>
+        <p>And I'm a Photographer</p>
+      </div>
+    </FinishContainer>
   );
 }
