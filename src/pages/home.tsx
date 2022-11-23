@@ -18,7 +18,7 @@ const Home = () => {
     <div>
       <Aulas />
       <ListaOrdenada />
-      <Depoimentos />
+      <Slider />
       <Footer />
     </div>
   );
