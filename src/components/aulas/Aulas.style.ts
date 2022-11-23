@@ -2,12 +2,12 @@ import styled from "styled-components";
 // import background from '../../assets/images/aulas/background.jpg';
 
 export const LightBG = styled.div`
-  background: #2a3341;
-  background-size: cover;
+  /* background: #2a3341;
+  background-size: cover; */
   padding-top: 4px;
   padding-bottom: 4px;
   display: block;
-  height: 65vh;
+  height: 45vh;
   flex-wrap: wrap;
   @media only screen and (max-width: 1230px) {
     height: 95vh;
