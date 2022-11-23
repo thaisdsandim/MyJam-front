@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const ContainerD = styled.div`
   max-width: 100%;
   /* border: 1px solid rgba(197, 197, 197, 1); */
   min-height: 135px;
@@ -9,9 +9,11 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  background: #2A3341;
 
   .Titulo {
     display: block;
+    color: #ffffff;
 
     justify-content: center;
     align-items: center;
@@ -31,6 +33,7 @@ export const Container = styled.div`
   }
 
   p {
+    display: block;
     /* background: #161C20; */
     background: linear-gradient(150deg, grey, #161c20 50%);
 border-radius: 10px;
@@ -47,12 +50,13 @@ padding-top: 80px;
 `;
 
 export const LogoImg = styled.img`
-  width: 170px;
-  height: 170px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
-  overflow: hidden;
-  /* border: 1px solid black; */
+  /* overflow: hidden; */
+  /* border: 3px solid black; */
   display: block;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: -80px;

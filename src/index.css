@@ -1,7 +1,33 @@
-*{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   margin: 0 auto;
+
+  /* background-color: #1e1e1e; */
+}
+#root,
+body,
+html {
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  
+  /* background-image: url("src/assets/images/background.png") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.9; */
+}
+body{
+  background-color: #222b35;
+  background-image: url("src/assets/images/backgroundD.png") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+button {
+  font-family: "Roboto", sans-serif;
 }

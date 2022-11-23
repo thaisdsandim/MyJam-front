@@ -1,7 +1,9 @@
-import { Barra } from "./Footer.style"
+import { Barra, BarraBlack } from "./Footer.style"
 
 const Footer = () => {
     return (
+      <>
+      <BarraBlack>{""}</BarraBlack>
       <Barra>
         <div>
         <ul>
@@ -11,7 +13,9 @@ const Footer = () => {
         </ul>
         </div>
       </Barra>
+      </>
     );
+    
   };
 
   export default Footer;
