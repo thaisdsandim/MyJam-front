@@ -14,6 +14,12 @@ html {
   margin: 0 auto;
   padding: 0;
   background-color: #222b35;
+  /* background-image: url("src/assets/images/Group-bg.png") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.9; */
+  
 }
 button {
   font-family: "Roboto", sans-serif;
