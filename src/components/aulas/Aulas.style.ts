@@ -9,20 +9,18 @@ export const LightBG = styled.div`
   display: block;
   height: 65vh;
   flex-wrap: wrap;
-  @media only screen and (max-width: 1230px){
-        height: 95vh;
-      
+  @media only screen and (max-width: 1230px) {
+    height: 95vh;
   }
-  @media only screen and (max-width: 600px){
-        height: 80vh;
-  
-    }
-    @media only screen and (max-width: 390px){
-        height: 105vh;
-    }
-    @media only screen and (max-width: 258px){
-        height: 155vh;
-    }
+  @media only screen and (max-width: 600px) {
+    height: 80vh;
+  }
+  @media only screen and (max-width: 390px) {
+    height: 105vh;
+  }
+  @media only screen and (max-width: 258px) {
+    height: 155vh;
+  }
 `;
 
 export const AulasC = styled.div`
@@ -49,22 +47,21 @@ export const AulasC = styled.div`
     align-items: center;
     height: 220px;
     width: 220px;
-    @media only screen and (max-width: 750px){
-        height: 200px;
-        width: 200px;
+    @media only screen and (max-width: 750px) {
+      height: 200px;
+      width: 200px;
     }
-    @media only screen and (max-width: 600px){
-        height: 150px;
-        width: 150px;
+    @media only screen and (max-width: 600px) {
+      height: 150px;
+      width: 150px;
     }
-    @media only screen and (max-width: 450px){
-        height: 130px;
-        width: 130px;
+    @media only screen and (max-width: 450px) {
+      height: 130px;
+      width: 130px;
     }
   }
- 
+
   ul {
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,23 +69,22 @@ export const AulasC = styled.div`
     padding: 0px;
     margin: 0px 0px 0px 0px;
     flex-wrap: wrap;
-   
   }
   .listas li {
     width: 220px;
     height: 220px;
-        /* border: 1px solid #6c5ece; */
-        @media only screen and (max-width: 730px){
-        height: 200px;
-        width: 200px;
+    /* border: 1px solid #6c5ece; */
+    @media only screen and (max-width: 730px) {
+      height: 200px;
+      width: 200px;
     }
-    @media only screen and (max-width: 600px){
-        height: 150px;
-        width: 150px;
+    @media only screen and (max-width: 600px) {
+      height: 150px;
+      width: 150px;
     }
-    @media only screen and (max-width: 450px){
-        height: 130px;
-        width: 130px;
+    @media only screen and (max-width: 450px) {
+      height: 130px;
+      width: 130px;
     }
   }
 `;

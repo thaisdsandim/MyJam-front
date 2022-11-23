@@ -6,18 +6,20 @@ export const SliderD = styled.div`
 background-image: url("src/assets/images/backgroundDep.png") ;
 
 background-size: cover;
- 
+ object-fit: contain;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  width: 100% ;
-  height: 100% ;
+  width: 100%;
+  height: 100vh ;
 
   .swiper {
-    width: 50%;
-    height: 60%;
+    align-items: center;
+    width: 60%;
+    height: 80%;
     margin: 0 auto;
-    display : block;
+    display : flex;
+    
     
     
   }
@@ -70,6 +72,7 @@ export const Informacoes = styled.div`
     font-weight: 500;
     font-size: 18px;
     color: #ffffff;
+    
   }
   span {
     margin-top: 0px;
@@ -91,5 +94,10 @@ export const Depoimento = styled.div`
     font-size: 32px;
     line-height: 38px;
     text-align: center;
+
+    /* @media only screen and (max-width: 1230px) {
+    height: 95vh;
+  } */
   }
+  
 `;

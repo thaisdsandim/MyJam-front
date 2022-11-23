@@ -33,7 +33,10 @@ const router = createBrowserRouter([
     path: "/lessons/4",
     element: <LessonsFour />,
   },
-  
+  {
+    path: "/slider",
+    element: <Slider />,
+  },
 ]);
 
 export default router;
