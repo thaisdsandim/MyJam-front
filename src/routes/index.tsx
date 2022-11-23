@@ -2,24 +2,7 @@ import { createBrowserRouter, Router, Routes } from "react-router-dom";
 
 import Slider from "../components/slideDepoimento/SliderDepoimento";
 import Home from "../pages/home";
-<<<<<<< HEAD
 import ListaDeLicoes from "../pages/listaDeLicoes";
-
-const router = createBrowserRouter([
-    {
-      path: "/home",
-      element: <Home />,
-    },
-    {
-      path: "/listadelicoes",
-      element: <ListaDeLicoes />,
-    },
-  
-  ]);
-  
-  export default router;
-  
-=======
 import { LessonsTwo } from "../pages/lessonsTwo";
 import { LessonsThree } from "../pages/lessonsThree ";
 import { OnBoarding } from "../pages/Onboarding";
@@ -52,10 +35,14 @@ const router = createBrowserRouter([
     element: <LessonsFour />,
   },
   {
+    path: "/listadelicoes",
+    element: <ListaDeLicoes />,
+  },
+  {
     path: "/slider",
     element: <Slider />,
   },
+
 ]);
 
 export default router;
->>>>>>> 294d43f94b5a95405829d4b5013b02bbdc6c0d1e
