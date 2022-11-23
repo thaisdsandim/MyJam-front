@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
-import { Depoimento, Informacoes, SliderD } from "./SliderDepoimento.style";
+import { Depoimento, Informacoes, SliderD, SliderTela } from "./SliderDepoimento.style";
 import Icon from "../../assets/images/avatarDepoimentos.png";
 import Elipse from "../../assets/images/Ellipse.png";
 import Avatar from "../../assets/images/Avatar-maker.png";
@@ -14,7 +14,8 @@ import Avatar from "../../assets/images/Avatar-maker.png";
 const Slider = () => {
   return (
     <>
-     <div>
+     <SliderTela>
+      <div className="boxImagemE"><p>texto1</p></div>
       <SliderD>
         <Swiper
           spaceBetween={30}
@@ -83,7 +84,9 @@ const Slider = () => {
           </SwiperSlide>
         </Swiper>
       </SliderD>
-      </div>
+      <div className="boxImagemD"><p>texto2</p></div>
+      </SliderTela>
+
     </>
     
   );

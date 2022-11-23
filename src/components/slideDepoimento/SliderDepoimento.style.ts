@@ -1,21 +1,55 @@
 // Import Swiper styles
 import styled from "styled-components";
 
+
+export const SliderTela = styled.div`
+display: flex;
+justify-content: space-between;
+/* background: black; */
+/* background-image: url("src/assets/images/backgroundDep.png") ; */
+/* background-repeat: no-repeat;
+background-size: 100%;
+align-items: stretch; */
+/* width: 100%;
+height: 100%; */
+
+
+
+.boxImagemE {
+  /* background: white; */
+  width: 20%;
+  @media only screen and (max-width: 750px) {
+    display: none;
+  }
+}
+.boxImagemD {
+  /* background: red; */
+  width: 20%;
+  @media only screen and (max-width: 750px) {
+    display: none;
+  }
+}
+`
+
 export const SliderD = styled.div`
 
-background-image: url("src/assets/images/backgroundDep.png") ;
-
+/* background-image: url("src/assets/images/backgroundDep.png") ; */
+/* background-attachment: fixed;
+background-origin: padding-box;
 background-size: cover;
- object-fit: contain;
+ object-fit: contain; */
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
-  width: 100%;
+  width: 60%;
   height: 100vh ;
+  @media only screen and (max-width: 800px) {
+    width: 100%;
+  }
 
   .swiper {
     align-items: center;
-    width: 60%;
+    width: 80%;
     height: 80%;
     margin: 0 auto;
     display : flex;
@@ -54,6 +88,10 @@ background-size: cover;
       width: 90px;
       height: 90px;
       margin-right: 0px;
+      @media only screen and (max-width: 450px) {
+      width: 20%;
+      height: 20%;
+    }
     }
   }
 `;
@@ -62,7 +100,7 @@ export const Informacoes = styled.div`
   margin-left: 5px;
   padding: 10px;
   line-height: 20px;
-  align-content: flex-start;
+  /* align-content: flex-start; */
   
   p {
     margin-top: 1px;
@@ -84,8 +122,9 @@ export const Informacoes = styled.div`
   }
 `;
 export const Depoimento = styled.div`
-  width: 540px;
-  height: 114px;
+  display: flex;
+  width: 100%;
+  height: 100%;
   margin-bottom: 40px;
   h3 {
     font-family: "Roboto";
@@ -95,9 +134,11 @@ export const Depoimento = styled.div`
     line-height: 38px;
     text-align: center;
 
-    /* @media only screen and (max-width: 1230px) {
-    height: 95vh;
-  } */
+    @media only screen and (max-width: 760px) {
+    height: 100%;
+    font-size: 25px;
+    line-height: 25px;
+  }
   }
   
 `;
