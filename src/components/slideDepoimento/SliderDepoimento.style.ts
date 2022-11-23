@@ -33,13 +33,9 @@ height: 100%; */
 
 export const SliderD = styled.div`
 
-/* background-image: url("src/assets/images/backgroundDep.png") ; */
-/* background-attachment: fixed;
-background-origin: padding-box;
-background-size: cover;
- object-fit: contain; */
+
+  text-align: center;
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   width: 60%;
   height: 100vh ;
@@ -49,7 +45,7 @@ background-size: cover;
 
   .swiper {
     align-items: center;
-    width: 80%;
+    width: 100%;
     height: 80%;
     margin: 0 auto;
     display : flex;
@@ -65,6 +61,12 @@ background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.2); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border-radius: 20%;
+  
   }
 
   .swiper-slide img {
@@ -81,6 +83,7 @@ background-size: cover;
     padding: 0px;
     width: 100%;
     height: 100%;
+    
     img {
       overflow: hidden;
       border: 2px solid #6c5ece;
@@ -100,6 +103,7 @@ export const Informacoes = styled.div`
   margin-left: 5px;
   padding: 10px;
   line-height: 20px;
+  
   /* align-content: flex-start; */
   
   p {
@@ -123,9 +127,10 @@ export const Informacoes = styled.div`
 `;
 export const Depoimento = styled.div`
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
   margin-bottom: 40px;
+  
   h3 {
     font-family: "Roboto";
     font-style: italic;
