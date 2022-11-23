@@ -5,6 +5,7 @@ import {
   LessonsContent,
   LessonsFinish,
   LessonsHome,
+  LessonsContentButtons,
 } from "../components/lessons/lessons-1/LessonsContent";
 import { MyJamBar } from "../components/progressBar/MyJamBar";
 import { LessonContainer } from "../components/lessons/lessons-1/LessonsContainer";
@@ -60,24 +61,24 @@ export function Lessons() {
       )}
 
       {page === 2 && (
-        <LessonsContent
+        <LessonsContentButtons
           page={page}
           onClick={nextPage}
           title="Qual é esta corda?"
           buttonTitle={["3", "6", "1"]}
           description="Qual é esta corda?"
-          image={Guitar}
+          image=""
         />
       )}
 
       {page === 3 && (
-        <LessonsContent
+        <LessonsContentButtons
           page={page}
           onClick={nextPage}
           title="Qual dedo está na corda 2?"
           buttonTitle={["1", "2", "4"]}
           description="Qual dedo está na corda 2?"
-          image={Hand}
+          image=""
         />
       )}
 
@@ -92,7 +93,7 @@ export function Lessons() {
             "Corda 6, casa 3",
           ]}
           description="Em qual corda e casa está o dedo 4?"
-          image={Hand}
+          image={Guitar}
         />
       )}
     </LessonContainer>
