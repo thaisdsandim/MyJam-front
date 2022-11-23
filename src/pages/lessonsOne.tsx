@@ -5,10 +5,9 @@ import {
   LessonsContent,
   LessonsFinish,
   LessonsHome,
-} from "../components/lessons/lessons-3/LessonsContent";
+} from "../components/lessons/lessons-1/LessonsContent";
 import { MyJamBar } from "../components/progressBar/MyJamBar";
-import "../components/lessons/lessons-3/LessonsContainer.style";
-import { LessonContainer } from "../components/lessons/lessons-3/LessonsPageContainer";
+import { LessonContainer } from "../components/lessons/lessons-1/LessonsContainer";
 
 export function Lessons() {
   const [page, setPage] = useState(0);
@@ -42,9 +41,9 @@ export function Lessons() {
         <LessonsHome
           page={page}
           onClick={nextPage}
-          title="Contagem de dedos"
-          buttonTitle={["Nenhuma", "Alguma experiência"]}
-          description="Contagem de dedos"
+          title="As partes do violão"
+          buttonTitle={[]}
+          description="As partes do violão"
           image=""
         />
       )}
@@ -53,9 +52,9 @@ export function Lessons() {
         <LessonsContent
           page={page}
           onClick={nextPage}
-          title="Qual é esta casa?"
-          buttonTitle={["1", "4", "5"]}
-          description="Qual é esta casa?"
+          title="Qual é o nome dessa parte?"
+          buttonTitle={["Cabeçote", "Braço", "Tarraxa"]}
+          description="Qual é o nome dessa parte?"
           image={Guitar}
         />
       )}

@@ -2,6 +2,7 @@ import { createBrowserRouter, Router, Routes } from "react-router-dom";
 
 import Slider from "../components/slideDepoimento/SliderDepoimento";
 import Home from "../pages/home";
+import ListaDeLicoes from "../pages/listaDeLicoes";
 import { LessonsTwo } from "../pages/lessonsTwo";
 import { LessonsThree } from "../pages/lessonsThree ";
 import { OnBoarding } from "../pages/Onboarding";
@@ -34,9 +35,14 @@ const router = createBrowserRouter([
     element: <LessonsFour />,
   },
   {
+    path: "/listadelicoes",
+    element: <ListaDeLicoes />,
+  },
+  {
     path: "/slider",
     element: <Slider />,
   },
+
 ]);
 
 export default router;
