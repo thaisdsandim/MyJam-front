@@ -10,7 +10,7 @@ import { Lessons } from "../pages/lessonsOne";
 
 const router = createBrowserRouter([
   {
-    path: "/home",
+    path: "/",
     element: <Home />,
   },
   {
