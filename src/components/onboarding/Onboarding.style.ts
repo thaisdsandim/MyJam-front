@@ -34,9 +34,11 @@ export const Container = styled.div`
     margin-top: 50px;
   }
 
-  .onboarding-home img {
-    width: 192px;
-    height: 425px;
-    padding-right: 50px;
+  .onboarding-home  {
+    gap: 50px;
+    img{
+      max-width:190px;
+      max-height: 420px;
+    }
   }
 `;

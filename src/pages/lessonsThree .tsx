@@ -3,14 +3,13 @@ import Cifra1 from "../assets/lessons/cifra-1.png";
 import Cifra2 from "../assets/lessons/cifra-2.png";
 import Cifra3 from "../assets/lessons/cifra-3.png";
 import Cifra4 from "../assets/lessons/cifra-4.png";
+import { LessonsFinish } from "../components/lessons/lessons-3/LessonsFinish";
 import {
   LessonsContent,
-  LessonsFinish,
   LessonsHome,
 } from "../components/lessons/lessons-3/LessonsContent";
 import { MyJamBar } from "../components/progressBar/MyJamBar";
-import { LessonContainer } from "../components/lessons/lessons-3/LessonsPageContainer";
-import "../components/lessons/lessons-3/LessonsContainer.style";
+import { LessonContainer } from "../components/lessons/lessons-3/LessonsContainer";
 
 export function LessonsThree() {
   const [page, setPage] = useState(0);

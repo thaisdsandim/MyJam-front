@@ -55,7 +55,4 @@ export const LessonContainer = styled.div`
     margin-top: 210px;
     margin-bottom: 30px;
   }
-  .line-bottom-home {
-
-  }
 `;

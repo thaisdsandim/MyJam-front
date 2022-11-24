@@ -1,7 +1,7 @@
 import Ciphers from "../../../assets/lessons/cifras-musicais.png";
 
 import { LessonsButton, LessonsVoltar } from "../LessonsButton";
-import { Container } from "./LessonsContainer.style";
+
 
 interface LessonContainerProps {
   image: string;
@@ -18,7 +18,7 @@ export function LessonsContent(props: LessonContainerProps) {
   }
 
   return (
-    <Container className="d-flex flex-column align-items-center">
+    <>
       <hr className="line-top" />
       <h1>{props.title}</h1>
       <img className="img-content" src={props.image} alt={props.description} />
@@ -35,7 +35,7 @@ export function LessonsContent(props: LessonContainerProps) {
           </LessonsButton>
         ))}
       </div>
-    </Container>
+    </>
   );
 }
 export function LessonsHome(props: LessonContainerProps) {
@@ -44,7 +44,7 @@ export function LessonsHome(props: LessonContainerProps) {
   }
 
   return (
-    <Container className="d-flex flex-column  align-items-center">
+    <>
       <hr className="line-top" />
       <h1>{props.title}</h1>
       <img className="img-home" src={Ciphers} alt="Fingers on the guitar" />
@@ -96,14 +96,6 @@ export function LessonsHome(props: LessonContainerProps) {
           {props.buttonTitle}
         </LessonsButton>
       </div>
-    </Container>
-  );
-}
-
-export function LessonsFinish() {
-  return (
-    <Container className="d-flex justify-content-center align-items-center">
-      <h1 style={{ color: "white" }}>Parabéns!</h1>
-    </Container>
+    </>
   );
 }

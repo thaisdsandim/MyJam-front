@@ -80,10 +80,4 @@ export function LessonsHome(props: LessonsContentProps) {
   );
 }
 
-export function LessonsFinish() {
-  return (
-    <>
-      <h1 style={{ color: "white", display:"flex", justifyContent:"center", alignItems:"center", height:"100vh"}}>Parabéns!</h1>
-    </>
-  );
-}
+

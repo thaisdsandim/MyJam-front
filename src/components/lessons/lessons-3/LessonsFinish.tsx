@@ -1,9 +1,8 @@
 import { Link } from "react-router-dom";
-import { FinishContainer } from "./lessons-1/LessonsContainer";
-import Bg from "../../assets/lessons/finish.png";
-import Overlay from "../../assets/lessons/overlay-end.png";
-import { LessonsButton } from "./LessonsButton";
-import { LessonsTwo } from "../../pages/lessonsTwo";
+import { FinishContainer } from ".././lessons-1/LessonsContainer";
+import Bg from "../../../assets/lessons/finish.png";
+import Overlay from "../../../assets/lessons/overlay-end.png";
+import { LessonsButton } from ".././LessonsButton";
 
 export function LessonsFinish() {
   return (
@@ -14,11 +13,11 @@ export function LessonsFinish() {
       <div className="front-image d-flex flex-column">
         <img src={Overlay}></img>
         <div className="d-flex finish-button">
-          <Link to={"/lessons/3"}>
+          <Link to={"/lessons/2"}>
             <LessonsButton>Voltar pra lições</LessonsButton>
           </Link>
-          <Link to={"/lessons/3"}>
-          <LessonsButton>Próxima lição</LessonsButton>
+          <Link to={"/lessons/4"}>
+            <LessonsButton>Próxima lição</LessonsButton>
           </Link>
         </div>
       </div>
