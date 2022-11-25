@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Background from "../../assets/images/Group-bg.png";
+import Background from "../../assets/images/background2.png";
 import OnboardingAnimation from "../../assets/onboarding/onboarding-animation.png";
 import { FinishContainer } from "./Onboarding.style";
 import { OnboardingButton } from "./OnboardingButton.style";
