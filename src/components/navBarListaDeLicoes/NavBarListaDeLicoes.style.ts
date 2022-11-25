@@ -16,6 +16,7 @@ export const Nav = styled.header`
 
 export const MenuLink = styled.img`
   padding: 16px 11px;
+  
   /* @media only screen and (max-width: 600px) {
     width: 80%;
     padding: 0rem 2rem;

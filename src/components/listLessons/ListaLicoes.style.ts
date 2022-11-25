@@ -42,6 +42,9 @@ export const Lessons = styled.div`
     :hover{
       background: #a89df2;
       box-shadow: 5px 5px #888888;
+      
+      /* transform: scale(1.1); */
+    
     }
   }
   
@@ -52,7 +55,7 @@ export const Lessons = styled.div`
     margin-top: 26px;    
   }
   .viola:hover{
-    animation: pulsante 2s alternate;
+    animation: pulsante 2s alternate infinite;
 }
 
 @keyframes pulsante{
@@ -78,6 +81,7 @@ export const Lessons = styled.div`
     border-radius: 50%;
   }
   .playL:hover{
+    
     animation-name: botao;
     animation-duration: 0.5s;
     animation-iteration-count: infinite;
