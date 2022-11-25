@@ -12,7 +12,7 @@ const Aulas = () => {
         <div>
           <h3>O que você quer aprender no MyJam?</h3>
         </div>
-        <div className="listas">
+        <div className="listas container">
           <div>
             <ul>
               <li>

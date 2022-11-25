@@ -70,6 +70,9 @@ export const AulasC = styled.div`
     margin: 0px 0px 0px 0px;
     flex-wrap: wrap;
   }
+ 
+  
+
   .listas li {
     width: 220px;
     height: 220px;

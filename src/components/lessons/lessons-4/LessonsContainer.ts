@@ -4,7 +4,7 @@ export const LessonContainer = styled.div`
   color: white;
   height: 100vh;
   padding-top: 45px;
-  overflow: hidden;
+  /* overflow: hidden; */
   width: 100%;
   background-color: #222b35;
 

@@ -79,6 +79,14 @@ export const Lessons = styled.div`
   .playL {
     margin-top: -40px;
     border-radius: 50%;
+    &:active{
+      opacity: 0.9;
+      /* padding-top: 10px; */
+      background: none;
+      
+
+       box-shadow: 0 0 20px 5px #ffff; 
+    }
   }
   .playL:hover{
     
@@ -90,6 +98,7 @@ export const Lessons = styled.div`
     background: linear-gradient(269.26deg, #8321B1 6.12%, #C72A25 95.01%);
 /* box-shadow: 0px 3.31548px 3.31548px rgba(0, 0, 0, 0.25); */
     /* box-shadow: 0 0 50px 20px rgba(255, 0, 72, 0.5);  */
+
 }
 
 @keyframes botao{

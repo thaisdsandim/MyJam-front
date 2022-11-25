@@ -1,9 +1,13 @@
 import play from "../../assets/images/ListaDeLicoes/playBottom.png";
+import { Link } from "react-router-dom";
 
+interface PlayerProps{
+src: string,
+}
 
-const Player = () => {
+const Player = (props: PlayerProps) => {
     return(
-<a href={"http://google.com"}><img className="playL" src={play} /></a>
+<Link to={props.src}> <img className="playL" src={play} /></Link>
     );
 };
 
