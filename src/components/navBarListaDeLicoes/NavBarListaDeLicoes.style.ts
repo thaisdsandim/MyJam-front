@@ -1,7 +1,12 @@
 import styled from "styled-components";
 
 
-export const Nav = styled.div`
+export const Nav = styled.header`
+position:fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 132px;
     display: flex;
     justify-content: space-between;
     align-items: center;
