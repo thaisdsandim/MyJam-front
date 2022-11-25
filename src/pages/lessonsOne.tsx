@@ -1,7 +1,7 @@
 import Hand from "../assets/lessons/hand-position-1.png";
 import Guitar from "../assets/lessons/h-guitar.png";
 import { useState } from "react";
-import { LessonsFinish } from "../components/lessons/LessonsFinish";
+import { LessonsFinish } from "../components/lessons/lessons-1/LessonsFinish";
 import {
   LessonsContent,
   LessonsHome,

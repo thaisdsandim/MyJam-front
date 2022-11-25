@@ -1,7 +1,7 @@
 import { useState } from "react";
+import { OnBoardingFinish } from "../components/onboarding/OnboardingFinish";
 import {
   OnBoardingComponent,
-  OnBoardingFinish,
   OnBoardingHome,
 } from "../components/onboarding/OnboardingContent";
 import { Container } from "../components/onboarding/Onboarding.style";

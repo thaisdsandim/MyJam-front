@@ -2,7 +2,7 @@ import { Howl } from "howler";
 import CipherIcon from "../../../assets/lessons/cifra-icone.png";
 import Do from "../../../assets/audios/do.wav";
 import { LessonsButton, LessonsVoltar } from "../LessonsButton";
-import { Container } from "./LessonsContainer.style";
+
 
 interface LessonContainerProps {
   image: string;
@@ -34,7 +34,7 @@ export function LessonsContent(props: LessonContainerProps) {
   }
 
   return (
-    <Container className="d-flex flex-column align-items-center">
+    <>
       <hr className="line-top" />
       <h1>{props.title}</h1>
       <div className="container-center row d-flex">
@@ -86,14 +86,6 @@ export function LessonsContent(props: LessonContainerProps) {
           </LessonsButton>
         ))}
       </div>
-    </Container>
-  );
-}
-
-export function LessonsFinish() {
-  return (
-    <Container className="d-flex justify-content-center align-items-center">
-      <h1 style={{ color: "white" }}>Parabéns!</h1>
-    </Container>
+    </>
   );
 }
