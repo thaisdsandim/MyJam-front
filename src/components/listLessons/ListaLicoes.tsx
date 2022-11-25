@@ -1,10 +1,11 @@
 import violao from "../../assets/images/ListaDeLicoes/violao.png";
 import play from "../../assets/images/ListaDeLicoes/playBottom.png";
-import { Lessons } from "./ListaLicoes.style";
+import { Lessons, Enquadro } from "./ListaLicoes.style";
 
 const ListLessons = () => {
   return (
     <>
+    <Enquadro>
       <Lessons>
         <div className="Infos">
           <h3 className="infoH">lição 1</h3>
@@ -60,6 +61,7 @@ const ListLessons = () => {
           <img className="playL" src={play} />
         </div>
       </Lessons>
+    </Enquadro>
     </>
   );
 };

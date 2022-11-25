@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const Enquadro = styled.div`
+margin-top: 259px;
+`
+
 export const Lessons = styled.div`
  
   align-items: center;
@@ -7,6 +11,7 @@ export const Lessons = styled.div`
   text-align: center;
   align-content: center;
   margin: 10vh;
+  
 
   .infos {
    text-align: center;
