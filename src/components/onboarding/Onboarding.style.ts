@@ -4,7 +4,7 @@ export const Container = styled.div`
   color: white;
   height: 100vh;
   padding-top: 45px;
-  background-color: #222b35;
+  height: 100vh;
 
   .progress-container {
     width: 1080px;
@@ -34,11 +34,37 @@ export const Container = styled.div`
     margin-top: 50px;
   }
 
-  .onboarding-home  {
+  .onboarding-home {
     gap: 50px;
-    img{
-      max-width:190px;
+    img {
+      max-width: 190px;
       max-height: 420px;
     }
+  }
+`;
+
+export const FinishContainer = styled.div`
+  
+
+  .bg-image img{
+    filter: blur(15px);
+    -webkit-filter: blur(20px);
+    width: 100%;
+    height: 100vh;
+    transition: rotate(90deg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+  }
+
+  /* Position text in the middle of the page/image */
+  .front-image {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .finish-button {
+    margin-top: 40px;
   }
 `;

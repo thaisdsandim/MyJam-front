@@ -1,20 +1,14 @@
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { OnboardingButton } from "./OnboardingButton.style";
-import {
-  Bass,
-  Drums,
-  Eguitar,
-  Guitar,
-  Keyb,
-  OnboardingAnimation,
-} from "../../assets/onboarding";
+
+import { Bass, Drums, Eguitar, Guitar, Keyb } from "../../assets/onboarding";
 import { OnboardingContainer } from "./OnboardingContainer";
 
 type OnBoardingContentProps = {
   page: number;
   onClick: () => void;
   buttonTitle?: string[];
-  title: string,
+  title: string;
 };
 
 export function OnBoardingComponent(props: OnBoardingContentProps) {
@@ -49,21 +43,5 @@ export function OnBoardingHome(props: OnBoardingContentProps) {
         <img src={Drums} alt="Drums" />
       </div>
     </OnboardingContainer>
-  );
-}
-export function OnBoardingFinish() {
-  return (
-    <div
-      className="d-flex flex-column  align-items-center"
-      style={{
-        height: "100vh",
-      }}
-    >
-      <h1 className="text-white" style={{marginTop:"50px"}}>
-        Seu plano de aulas foi criado com sucesso!
-      </h1>
-      <img src={OnboardingAnimation} alt="Transition image" />
-      <OnboardingButton>Finalizar</OnboardingButton>
-    </div>
   );
 }
