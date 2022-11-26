@@ -1,6 +1,7 @@
 import { Title, Container, Buttons } from "./Header.style";
 import Logo from "/src/assets/images/home/logo.png";
 import Simbolo from "/src/assets/images/home/simbolo-musical.png";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -20,8 +21,8 @@ const Header = () => {
         <img src={Simbolo} />
       </Title>
       <Buttons>
-        <button className="cadastrar">Quero me cadastrar</button>
-        <button className="logar">Já tenho uma conta</button>
+        <Link to={'/register'}><button className="cadastrar">Quero me cadastrar</button></Link>
+        <Link to={'/login'}><button className="logar">Já tenho uma conta</button></Link>
       </Buttons>
     </Container>
   );
