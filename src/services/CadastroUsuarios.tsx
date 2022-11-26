@@ -7,6 +7,6 @@ interface UsuariosPayload{
 }
 
 export function cadastroUsuario(payload:UsuariosPayload){
-    return api.post("/cadastro",payload);
+    return api.post("/users/register",payload);
 }
 

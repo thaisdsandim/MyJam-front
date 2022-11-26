@@ -6,5 +6,5 @@ interface LoginProps{
 }
 
 export function login(payload:LoginProps){
-    return api.post("/login", payload);
+    return api.post("/users/login", payload);
 }
