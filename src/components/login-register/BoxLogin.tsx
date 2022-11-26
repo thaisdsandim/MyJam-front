@@ -1,5 +1,5 @@
 import { FormEvent, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { login } from "../../services/login";
 import { setUser } from "../../store/modules/user";
@@ -7,9 +7,10 @@ import { Button, Input, LoginBox } from "./Box.style";
 import "./login-register.css";
 
 const BoxLogin = () => {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    const [email, setEmail] = useState<string>("");
+    const [password, setPassword] = useState<string>("");
     const dispatch = useDispatch()
+    const navigate = useNavigate()
   
     const handleLogin = async (event: FormEvent) => {
         event.preventDefault();
@@ -21,9 +22,13 @@ const BoxLogin = () => {
            dispatch(
             setUser({
               token: response.data.token,
-              email
+              email,
+              isLogged: true,
             })
            )
+
+           navigate("/lista");
+
         } catch (error) {
           alert("Ocorreu um erro ao tentar fazer login!")
         }

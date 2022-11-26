@@ -13,6 +13,7 @@ export function Return() {
 }
 
 const BoxReturn = styled.div`
+    padding-top: 18px;
     .link {
         max-width: 24px;
         margin-right: 102px;

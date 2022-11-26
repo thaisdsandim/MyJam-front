@@ -6,6 +6,7 @@ export const Box = styled.div`
     padding-top: 50px;
     padding-bottom: 50px;
     .form {
+        padding-top: 27px;
         padding-left: 120px;
         padding-right: 80px;
         width: 50%;
@@ -74,7 +75,7 @@ export const Box2 = styled.div`
         width: 50%;
     }
     .imgLogin {
-        padding-top: 30px;
+        padding-top: 10px;
         width: 50%;
         text-align: right;
     }
