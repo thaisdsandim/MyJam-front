@@ -1,34 +1,8 @@
-import { useState } from "react";
 import { Button, Input, RegisterBox } from "./Box.style";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./login-register.css";
 
 export function BoxRegister() {
-    const [email, setEmail] = useState("");
-    const [name, setName] = useState("");
-    const [senha, setSenha] = useState("");
-    const [error, setError] = useState("");
-    const navigate = useNavigate();
-  
-    const { signup } = useAuth();
-  
-    const handleRegister = () => {
-      if (!name || !email || !senha) {
-        setError("Preencha todos os campos");
-        return;
-      }
-  
-      const res = signup(name, email, senha);
-  
-      if (res) {
-        setError(res);
-        return;
-      }
-  
-      alert("Usuário cadatrado com sucesso!");
-      navigate("/onboarding");
-    };
-
     return (
         <RegisterBox>
             <div>

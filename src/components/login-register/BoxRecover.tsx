@@ -1,5 +1,4 @@
 import { Button, Input, LoginBox } from "./Box.style";
-import { Link} from "react-router-dom";
 import "./login-register.css";
 
 export function BoxRecover() {

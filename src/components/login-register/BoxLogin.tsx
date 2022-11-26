@@ -1,34 +1,7 @@
-import { ChangeEvent, useContext, useState } from "react";
 import { Button, Input, LoginBox } from "./Box.style";
-import { Link, useNavigate } from "react-router-dom";
-import { AuthContext } from "../../contexts/AuthContext";
 import "./login-register.css";
 
 export function BoxLogin() {
-    const auth = useContext(AuthContext);
-    const navigate = useNavigate();
-
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
-
-    const handleEmailInput = (event: ChangeEvent<HTMLInputElement>) => {
-        setEmail(event.target.value);
-    }
-
-    const handlePasswordInput = (event: ChangeEvent<HTMLInputElement>) => {
-        setPassword(event.target.value);
-    }
-
-    const handleLogin = async () => {
-        if (email && password) {
-            const isLogged = await auth.signin(email, password);
-            if (isLogged) {
-                navigate('/');
-            } else {
-                alert("Não deu certo.");
-            }
-        }
-    }
     return (
         <LoginBox>
             <div>
