@@ -1,31 +1,61 @@
+import { FormEvent, useState } from "react";
+import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { login } from "../../services/login";
+import { setUser } from "../../store/modules/user";
 import { Button, Input, LoginBox } from "./Box.style";
 import "./login-register.css";
 
-export function BoxLogin() {
+const BoxLogin = () => {
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const dispatch = useDispatch()
+  
+    const handleLogin = async (event: FormEvent) => {
+        event.preventDefault();
+    
+        try {
+           const response = await login ({email, password})
+           console.log(response.data.token)
+    
+           dispatch(
+            setUser({
+              token: response.data.token,
+              email
+            })
+           )
+        } catch (error) {
+          alert("Ocorreu um erro ao tentar fazer login!")
+        }
+    }
+
     return (
         <LoginBox>
             <div>
                 <h1>Login</h1>
-                <form action="">
+                <form>
                     <span>Email</span>
-                    <Input 
+                    <Input
+                        id="email"
                         type="email" 
                         placeholder="seuemail@site.com" 
                         value={email} 
-                        onChange={handleEmailInput}
+                        onChange={(event) => setEmail(event.target.value)}
                     />
                     <span>Senha</span>
                     <Input
+                        id="password"
                         type="password"
                         placeholder="Senha"
                         value={password}
-                        onChange={handlePasswordInput}
+                        onChange={(event) => setPassword(event.target.value)}
                     />
                         <Link to={''}><p>Esqueceu a senha?</p></Link>
-                    <Button onClick={handleLogin} className="enter">Login</Button>
+                    <Button onClick={handleLogin} type="submit" className="enter">Login</Button>
                 </form>
-                <Link to={'/onboarding'}><Button className="visitante">Entrar como visitante</Button></Link>
             </div>
         </LoginBox>
     );
 }
+
+export default BoxLogin;
