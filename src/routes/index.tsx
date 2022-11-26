@@ -8,11 +8,21 @@ import { LessonsThree } from "../pages/lessonsThree ";
 import { OnBoarding } from "../pages/Onboarding";
 import { LessonsFour } from "../pages/lessonsFour";
 import { Lessons } from "../pages/lessonsOne";
+import { Login } from "../pages/Login";
+import { Register } from "../pages/Register";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/register",
+    element: <Register />,
   },
   {
     path: "/onboarding",
