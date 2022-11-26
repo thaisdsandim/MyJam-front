@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #222B35;  
+}
+
+.enter {
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-bottom: 30px;
+    background: #6c5ece;
+    box-shadow: 0px 5px 4px 0px #8321b1;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 24px;
+    -webkit-box-shadow: 0px 5px #8321b1;
+} 
+.enter:hover {
+    background-color: #6154b9;
+}
+.enter:active {
+    padding-bottom: 10px;
+    box-shadow: none;
+}
+
+.visitante {
+    border: 1px solid #6C5ECE;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+}
