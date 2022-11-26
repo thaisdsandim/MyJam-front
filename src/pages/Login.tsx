@@ -1,4 +1,4 @@
-import { BoxLogin } from "../components/login-register/BoxLogin";
+import BoxLogin from "../components/login-register/BoxLogin";
 import { Return } from "../components/login-register/Return";
 import { Box } from "../components/login-register/Box.style"
 import "../components/login-register/login-register.css"
