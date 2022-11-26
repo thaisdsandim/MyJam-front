@@ -2,7 +2,7 @@ import styled from "styled-components";
 import background from "../../assets/images/aulas/backgound.jpeg";
 
 export const Container = styled.div`
-  background-color: #222b35;
+  /* background-color: #222b35; */
   margin-top: 6rem;
   padding-bottom: 2rem;
   @media only screen and (max-width: 350px){
