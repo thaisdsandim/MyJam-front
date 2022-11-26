@@ -1,8 +1,8 @@
 import api from "./api"
 
 interface LoginProps{
-    email:string;
-    password:string;
+    email: string;
+    password: string;
 }
 
 export function login(payload:LoginProps){

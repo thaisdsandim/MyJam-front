@@ -1,10 +1,9 @@
 import api from "./api";
 
 interface UsuariosPayload{
-    name: string;
-    email:string;
-    password:string;
-   
+    userName: string;
+    email: string;
+    password: string;
 }
 
 export function cadastroUsuario(payload:UsuariosPayload){

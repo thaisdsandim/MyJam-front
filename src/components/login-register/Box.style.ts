@@ -67,7 +67,7 @@ export const LoginBox = styled.div`
 export const Box2 = styled.div`
     display: flex;
     flex-flow: row wrap;
-    padding-top: 20px;
+    padding-top: 50px;
     .form {
         padding-left: 120px;
         padding-right: 80px;
