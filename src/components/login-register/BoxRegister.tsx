@@ -1,8 +1,33 @@
+import { FormEvent, useState } from "react";
 import { Button, Input, RegisterBox } from "./Box.style";
-import { Link } from "react-router-dom";
+import { cadastroUsuario } from "../../services/CadastroUsuarios";
 import "./login-register.css";
 
-export function BoxRegister() {
+const BoxRegister = () => {
+    const [userName, setuserName] = useState<string>("")
+    const [email, setEmail] = useState<string>("")
+    const [password, setPassword] = useState<string>("")
+
+    const cadastro = async (event: FormEvent) =>{
+      event.preventDefault()
+
+      const payload = {
+        userName,
+        email,
+        password
+      }
+
+      try {
+        const response = await cadastroUsuario(payload);
+        if (response.status !== 201) {
+          return alert("Ocorreu um erro!")
+        }
+        alert("Cadastro efetuado com sucesso!");
+      } catch (error) {
+        alert("Ocorreu um erro ao tentar fazer cadastro!");
+      }
+    }
+
     return (
         <RegisterBox>
             <div>
@@ -10,31 +35,31 @@ export function BoxRegister() {
                 <form action="">
                     <span>Nome</span>
                     <Input 
-                        type="name" 
+                        type="text" 
                         placeholder="Nome/Nome Social" 
-                        value={name} 
-                        onChange={(e) => [setName(e.target.value), setError("")]}
+                        value={userName} 
+                        onChange={(event) => setuserName(event.target.value)}
                     />
                     <span>Email*</span>
                     <Input 
                         type="email" 
                         placeholder="seuemail@site.com" 
                         value={email} 
-                        onChange={(e) => [setEmail(e.target.value), setError("")]}
+                        onChange={(event) => setEmail(event.target.value)}
                     />
                     <span>Senha*</span>
                     <Input
                         type="password"
                         placeholder="Min. 6 caracteres"
-                        value={senha}
-                        onChange={(e) => [setSenha(e.target.value), setError("")]}
+                        value={password}
+                        onChange={(event) => setPassword(event.target.value)}
                     />
                     <br></br><br></br>
-                    <Button onClick={handleRegister} className="enter">Criar conta</Button>
+                    <Button onClick={cadastro} type="submit" className="enter">Criar conta</Button>
                 </form>
-                <Link to={'/onboarding'}><Button className="visitante">Entrar como visitante</Button></Link>
             </div>
         </RegisterBox>
     );
 }
 
+export default BoxRegister;
