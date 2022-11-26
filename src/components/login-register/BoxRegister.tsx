@@ -36,14 +36,16 @@ const BoxRegister = () => {
                     <span>Nome</span>
                     <Input 
                         type="text" 
-                        placeholder="Nome/Nome Social" 
+                        placeholder="Nome/Nome Social"
+                        required
                         value={userName} 
                         onChange={(event) => setuserName(event.target.value)}
                     />
                     <span>Email*</span>
                     <Input 
                         type="email" 
-                        placeholder="seuemail@site.com" 
+                        placeholder="seuemail@site.com"
+                        required
                         value={email} 
                         onChange={(event) => setEmail(event.target.value)}
                     />
@@ -51,6 +53,8 @@ const BoxRegister = () => {
                     <Input
                         type="password"
                         placeholder="Min. 6 caracteres"
+                        required
+                        min={6}
                         value={password}
                         onChange={(event) => setPassword(event.target.value)}
                     />

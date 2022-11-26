@@ -13,7 +13,7 @@ const BoxLogin = () => {
   
     const handleLogin = async (event: FormEvent) => {
         event.preventDefault();
-    
+        
         try {
            const response = await login ({email, password})
            console.log(response.data.token)
@@ -38,8 +38,9 @@ const BoxLogin = () => {
                     <Input
                         id="email"
                         type="email" 
-                        placeholder="seuemail@site.com" 
-                        value={email} 
+                        placeholder="seuemail@site.com"
+                        required
+                        value={email}
                         onChange={(event) => setEmail(event.target.value)}
                     />
                     <span>Senha</span>
@@ -47,6 +48,8 @@ const BoxLogin = () => {
                         id="password"
                         type="password"
                         placeholder="Senha"
+                        min={6}
+                        required
                         value={password}
                         onChange={(event) => setPassword(event.target.value)}
                     />
