@@ -5,7 +5,7 @@ export function Return() {
     return (
         <BoxReturn>
             <div>
-                <Link to={'/home'}><img src="src/assets/login-register/seta.svg" className="link"/></Link>
+                <Link to={'/'}><img src="src/assets/login-register/seta.svg" className="link"/></Link>
                 <img src="src/assets/login-register/logo.svg" className="logo"/>
             </div>
         </BoxReturn>
