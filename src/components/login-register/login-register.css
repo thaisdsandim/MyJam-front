@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: #222B35;  
 }
 
 .enter {
@@ -39,4 +38,13 @@
     .form {
         min-width: 100%;
     }
+}
+
+.submit-lente {
+    position: absolute;
+    top: 25px; 
+    right: 25px;
+}
+.submit-line {
+    position: relative;
 }

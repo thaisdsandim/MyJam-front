@@ -7,6 +7,8 @@ const BoxRegister = () => {
     const [userName, setuserName] = useState<string>("")
     const [email, setEmail] = useState<string>("")
     const [password, setPassword] = useState<string>("")
+    const [hidePass, setHidePass] = useState<string>("password");
+    const [passeye, setPasseye] = useState<string>("https://icongr.am/fontawesome/eye.svg?size=16&color=88898a");
 
     const cadastro = async (event: FormEvent) =>{
       event.preventDefault()
@@ -43,6 +45,7 @@ const BoxRegister = () => {
                     />
                     <span>Email*</span>
                     <Input 
+                        id="email"
                         type="email" 
                         placeholder="seuemail@site.com"
                         required
@@ -50,14 +53,28 @@ const BoxRegister = () => {
                         onChange={(event) => setEmail(event.target.value)}
                     />
                     <span>Senha*</span>
+                    <div className="submit-line">
                     <Input
-                        type="password"
+                        id="password"
+                        type={hidePass}
                         placeholder="Min. 6 caracteres"
                         required
                         min={6}
                         value={password}
                         onChange={(event) => setPassword(event.target.value)}
                     />
+                    <img 
+                        className="submit-lente" 
+                        src={passeye} 
+                        onClick = {() => {
+                            if (hidePass === "password") {
+                                setHidePass("text");
+                                setPasseye("https://icongr.am/fontawesome/eye-slash.svg?size=16&color=88898a");
+                            } else {
+                                setHidePass("password");
+                                setPasseye("https://icongr.am/fontawesome/eye.svg?size=16&color=88898a");
+                        }}}></img>
+                    </div>
                     <br></br><br></br>
                     <Button onClick={cadastro} type="submit" className="enter">Criar conta</Button>
                 </form>

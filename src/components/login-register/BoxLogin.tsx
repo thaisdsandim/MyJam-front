@@ -9,8 +9,10 @@ import "./login-register.css";
 const BoxLogin = () => {
     const [email, setEmail] = useState<string>("");
     const [password, setPassword] = useState<string>("");
-    const dispatch = useDispatch()
-    const navigate = useNavigate()
+    const [hidePass, setHidePass] = useState<string>("password");
+    const [passeye, setPasseye] = useState<string>("https://icongr.am/fontawesome/eye.svg?size=16&color=88898a");
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
   
     const handleLogin = async (event: FormEvent) => {
         event.preventDefault();
@@ -49,15 +51,28 @@ const BoxLogin = () => {
                         onChange={(event) => setEmail(event.target.value)}
                     />
                     <span>Senha</span>
+                    <div className="submit-line">
                     <Input
                         id="password"
-                        type="password"
+                        type={hidePass}
                         placeholder="Senha"
                         min={6}
                         required
                         value={password}
                         onChange={(event) => setPassword(event.target.value)}
                     />
+                    <img 
+                        className="submit-lente" 
+                        src={passeye} 
+                        onClick = {() => {
+                            if (hidePass === "password") {
+                                setHidePass("text");
+                                setPasseye("https://icongr.am/fontawesome/eye-slash.svg?size=16&color=88898a");
+                            } else {
+                                setHidePass("password");
+                                setPasseye("https://icongr.am/fontawesome/eye.svg?size=16&color=88898a");
+                        }}}></img>
+                    </div> 
                         <Link to={''}><p>Esqueceu a senha?</p></Link>
                     <Button onClick={handleLogin} type="submit" className="enter">Login</Button>
                 </form>

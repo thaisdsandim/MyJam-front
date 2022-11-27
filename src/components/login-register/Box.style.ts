@@ -68,6 +68,7 @@ export const Input = styled.input`
 `;
 
 export const LoginBox = styled.div`
+    width: 100%;
     h1, span, p {
         font-family: 'Inter';
         font-style: normal;
