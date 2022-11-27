@@ -1,27 +1,39 @@
+import { useState } from "react";
 import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { OnboardingButton } from "./OnboardingButton.style";
-
 import { Bass, Drums, Eguitar, Guitar, Keyb } from "../../assets/onboarding";
 import { OnboardingContainer } from "./OnboardingContainer";
+import api from "../../services/api";
 
 type OnBoardingContentProps = {
   page: number;
   onClick: () => void;
-  buttonTitle?: string[];
+  buttons?: {
+    title?: string;
+    value: number;
+    onClick: (value: number) => void;
+  }[];
   title: string;
+  // user_questions/5
 };
 
 export function OnBoardingComponent(props: OnBoardingContentProps) {
-  function onClick(text: string) {
-    // console.log("valor" + text);
+  const handleClick = (
+    itemValue: number,
+    itemClick: (value: number) => void
+  ) => {
+    itemClick(itemValue);
     props.onClick();
-  }
+  };
 
   return (
     <OnboardingContainer title={props.title}>
-      {props?.buttonTitle?.map((item, index) => (
-        <OnboardingButton key={index} onClick={() => onClick(item)}>
-          {item}
+      {props?.buttons?.map((item, index) => (
+        <OnboardingButton
+          key={index}
+          onClick={() => handleClick(item.value, item.onClick)}
+        >
+          {item.title}
         </OnboardingButton>
       ))}
     </OnboardingContainer>

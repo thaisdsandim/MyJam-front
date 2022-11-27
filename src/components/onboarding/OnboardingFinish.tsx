@@ -3,8 +3,39 @@ import Background from "../../assets/images/background2.png";
 import OnboardingAnimation from "../../assets/onboarding/onboarding-animation.png";
 import { FinishContainer } from "./Onboarding.style";
 import { OnboardingButton } from "./OnboardingButton.style";
+import api from "../../services/api";
 
-export function OnBoardingFinish() {
+interface OnBoardingFinishProps {
+  instrumentId: number;
+  experienceId: number;
+  practiceId: number;
+  styleId: number;
+  learnId: number;
+}
+
+export function OnBoardingFinish({
+  instrumentId,
+  experienceId,
+  learnId,
+  practiceId,
+  styleId,
+}: OnBoardingFinishProps) {
+  async function sendAnswers() {
+    try {
+      const payload = {
+        instrumentId,
+        experienceId,
+        practiceId,
+        styleId,
+        learnId,
+      };
+      await api.post("users_questions/6", {
+        body: payload,
+      });
+      console.log(payload);
+    } catch (error) {}
+  }
+
   return (
     <FinishContainer>
       <div className="bg-image">
@@ -14,7 +45,7 @@ export function OnBoardingFinish() {
         <img src={OnboardingAnimation}></img>
         <div className="d-flex finish-button">
           <Link to={"/lessons/3"}>
-            <OnboardingButton>Finalizar</OnboardingButton>
+            <OnboardingButton onClick={sendAnswers}>Finalizar</OnboardingButton>
           </Link>
         </div>
       </div>
