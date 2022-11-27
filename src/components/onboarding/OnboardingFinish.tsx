@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Background from "../../assets/images/background2.png";
 import OnboardingAnimation from "../../assets/onboarding/onboarding-animation.png";
 import { FinishContainer } from "./Onboarding.style";
@@ -20,6 +21,7 @@ export function OnBoardingFinish({
   practiceId,
   styleId,
 }: OnBoardingFinishProps) {
+  const id = useParams();
   async function sendAnswers() {
     try {
       const payload = {
@@ -29,7 +31,7 @@ export function OnBoardingFinish({
         styleId,
         learnId,
       };
-      await api.post("users_questions/6", {
+      await api.post(`users_questions/${id}`, {
         body: payload,
       });
       console.log(payload);
@@ -44,7 +46,7 @@ export function OnBoardingFinish({
       <div className="front-image d-flex flex-column">
         <img src={OnboardingAnimation}></img>
         <div className="d-flex finish-button">
-          <Link to={"/lessons/3"}>
+          <Link to={"/listadelicoes"}>
             <OnboardingButton onClick={sendAnswers}>Finalizar</OnboardingButton>
           </Link>
         </div>
