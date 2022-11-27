@@ -55,7 +55,7 @@ const router = createBrowserRouter([
     element: <LessonsFour />,
   },
   {
-    path: "/lista",
+    path: "/listadelicoes",
     element: <ListaDeLicoes />,
   },
   {
