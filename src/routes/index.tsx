@@ -10,6 +10,8 @@ import { LessonsFour } from "../pages/lessonsFour";
 import { Lessons } from "../pages/lessonsOne";
 import { Login } from "../pages/Login";
 import { Register } from "../pages/Register";
+import { NewPassword } from "../pages/NewPassword";
+import { RecoverPassword } from "../pages/RecoverPassword";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +25,14 @@ const router = createBrowserRouter([
   {
     path: "/register",
     element: <Register />,
+  },
+  {
+    path: "/recoverpassword",
+    element: <RecoverPassword />,
+  },
+  {
+    path: "/newpassword",
+    element: <NewPassword />,
   },
   {
     path: "/onboarding",
