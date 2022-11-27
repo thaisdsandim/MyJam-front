@@ -21,4 +21,10 @@ const BoxReturn = styled.div`
     .logo {
         max-width: 191px;
     }
+
+    @media screen and (max-width: 480px) {
+        .link {
+            margin-right: 30px;
+        }
+    }
 `;

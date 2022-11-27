@@ -19,6 +19,36 @@ export const Box = styled.div`
     .imgLogin img {
         max-width: 100%
     }
+
+    @media screen and (max-width: 1035px) {
+        .form {
+            padding-left: 80px;
+        }
+        .imgLogin {
+            padding-top: 60px;
+        }
+    }
+    @media screen and (max-width: 955px) {
+        .form {
+            padding-left: 40px;
+        }
+        .imgLogin {
+            padding-top: 85px;
+        }
+    }
+    @media screen and (max-width: 835px) {
+        .form {
+            padding-left: 80px;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        padding-top: 20px;
+        .form {
+            padding-top: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
 `;
 
 export const Button = styled.button`
@@ -81,6 +111,36 @@ export const Box2 = styled.div`
     }
     .imgLogin img {
         max-width: 100%
+    }
+
+    @media screen and (max-width: 1035px) {
+        .form {
+            padding-left: 80px;
+        }
+        .imgLogin {
+            padding-top: 90px;
+        }
+    }
+    @media screen and (max-width: 955px) {
+        .form {
+            padding-left: 40px;
+        }
+        .imgLogin {
+            padding-top: 110px;
+        }
+    }
+    @media screen and (max-width: 835px) {
+        .form {
+            padding-left: 80px;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        padding-top: 20px;
+        .form {
+            padding-top: 0px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
     }
 `;
 
