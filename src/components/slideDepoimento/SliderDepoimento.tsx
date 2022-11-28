@@ -9,7 +9,7 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 import { Depoimento, Informacoes, SliderD, SliderTela } from "./SliderDepoimento.style";
 import Icon from "../../assets/images/avatarDepoimentos.png";
 import Elipse from "../../assets/images/Ellipse.png";
-import Avatar from "../../assets/images/Avatar-maker.png";
+import Avatar from "../../assets/images/AvatarMaker.png";
 
 const Slider = () => {
   return (

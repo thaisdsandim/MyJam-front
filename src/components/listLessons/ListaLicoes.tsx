@@ -44,15 +44,6 @@ const ListLessons = () => {
             <Player src="/lessons/4" />
           </div>
         </Lessons>
-        <Lessons>
-          <div className="Infos">
-            <h3 className="infoH">lição 5</h3>
-            <div className="divViola">
-              <img className="viola" src={violao} />
-            </div>
-            <Player src="/lessons/5" />
-          </div>
-        </Lessons>
       </Enquadro>
     </>
   );

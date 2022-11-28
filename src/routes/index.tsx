@@ -5,7 +5,7 @@ import Home from "../pages/home";
 import ListaDeLicoes from "../pages/listaDeLicoes";
 import { LessonsTwo } from "../pages/lessonsTwo";
 import { LessonsThree } from "../pages/lessonsThree ";
-import { OnBoarding } from "../pages/onboarding";
+import { OnBoarding } from "../pages/Onboarding";
 import { LessonsFour } from "../pages/lessonsFour";
 import { Lessons } from "../pages/lessonsOne";
 import { Login } from "../pages/Login";
