@@ -34,6 +34,7 @@ const BoxLogin = () => {
           }
           else {
             console.log(response.data);
+            alert(response.data)
             dispatch(
               setUser({
                 token: response.data.token,
