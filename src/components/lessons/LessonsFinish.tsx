@@ -3,7 +3,7 @@ import { FinishContainer } from "./lessons-1/LessonsContainer";
 import Bg from "../../assets/lessons/finish.png";
 import Overlay from "../../assets/lessons/overlay-end.png";
 import { LessonsButton } from "./LessonsButton";
-import { LessonsTwo } from "../../pages/lessonsTwo";
+
 
 export function LessonsFinish() {
   return (

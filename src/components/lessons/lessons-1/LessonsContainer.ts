@@ -5,8 +5,6 @@ export const LessonContainer = styled.div`
   height: 100vh;
   padding-top: 35px;
   width: 100%;
-  background-color: #222b35;
-
   h1 {
     margin: 20px 0px 40px 0px;
   }
@@ -99,15 +97,16 @@ export const LessonContainer = styled.div`
 `;
 
 export const FinishContainer = styled.div`
-  .bg-image {
+  
+  
+  .bg-image img{
     /* The image used */
         /* Add the blur effect */
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
-
+        /* filter: blur(10px);
+        -webkit-filter: blur(10px); */
     /* Full height */
-    height: 100%;
-
+    height: 100vh;
+    width: 100%;
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
@@ -117,9 +116,9 @@ export const FinishContainer = styled.div`
   /* Position text in the middle of the page/image */
   .front-image {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);   
+    transform: translate(-50%, -50%);
   }
   .finish-button{
     margin-top: 40px;

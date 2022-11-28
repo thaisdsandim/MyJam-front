@@ -5,7 +5,6 @@ export const LessonContainer = styled.div`
   height: 100vh;
   padding-top: 35px;
   width: 100%;
-  background-color: #222b35;
 
   h1 {
     margin: 20px 0px 40px 0px;
@@ -26,7 +25,14 @@ export const LessonContainer = styled.div`
     margin-top: 50px;
     margin: 0 auto;
     width: 1080px;
-    justify-content: space-around;
+    justify-content: center;
+  }
+  .info-text{
+    margin-top: 50px;
+  }
+  .info-content{
+    margin-top: 40px;
+    gap: 50px;
   }
   .progress {
     height: 25px;
@@ -52,7 +58,11 @@ export const LessonContainer = styled.div`
     -webkit-box-shadow: 0px 1px #000;
   }
   .line-bottom{
-    margin-top: 210px;
+    margin-top: 215px;
     margin-bottom: 30px;
+  }
+  .line-bottom-home{
+    position: fixed;
+    bottom:15%;
   }
 `;
