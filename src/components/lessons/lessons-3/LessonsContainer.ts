@@ -14,13 +14,20 @@ export const LessonContainer = styled.div`
   }
   .img-home {
     max-width: 1080px;
-    margin-bottom: 80px;
+
   }
 
   .progress-container {
     width: 1080px;
   }
-
+  .image-1-home {
+    max-width: 840px;
+    margin-bottom: 50px;
+  }
+  .title-1-home {
+    font-weight: 700;
+    font-size: 20px;
+  }
   .progress {
     height: 25px;
     background-color: rgba(217, 217, 230, 0.8);
@@ -51,9 +58,8 @@ export const LessonContainer = styled.div`
     background: #6c5ece;
   }
   .line-bottom {
-    margin-top: 135px;
+    margin-top: 200px;
   }
- 
 
   hr {
     color: #000;
@@ -65,6 +71,6 @@ export const LessonContainer = styled.div`
   h1 {
     color: #fff;
     margin-bottom: 40px;
-    margin-top: 60px;
+    margin-top: 30px;
   }
 `;

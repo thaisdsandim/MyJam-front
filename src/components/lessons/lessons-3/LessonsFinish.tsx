@@ -13,7 +13,7 @@ export function LessonsFinish() {
       <div className="front-image d-flex flex-column">
         <img src={Overlay}></img>
         <div className="d-flex finish-button">
-          <Link to={"/lessons/2"}>
+          <Link to={"/listadelicoes"}>
             <LessonsButton>Voltar pra lições</LessonsButton>
           </Link>
           <Link to={"/lessons/4"}>

@@ -1,6 +1,7 @@
+import { useState } from "react";
+import { useNavigate } from "react-router";
 import Image1 from "../assets/lessons/lesson1-1.png";
 import Image2 from "../assets/lessons/lesson1-2.png";
-import { useState } from "react";
 import { LessonsFinish } from "../components/lessons/lessons-1/LessonsFinish";
 import {
   LessonsContent,
@@ -13,10 +14,16 @@ import { LessonContainer } from "../components/lessons/lessons-1/LessonsContaine
 export function Lessons() {
   const [page, setPage] = useState(0);
   const [isFinish, setIsFinish] = useState(false);
+  const navigate = useNavigate();
 
   function previousPage() {
     setPage(page - 1);
   }
+
+  const navigateToLessons = () => {
+    // 👇️ navigate to /contacts
+    navigate('/listadelicoes');
+  };
 
   function nextPage() {
     setPage(page + 1);
