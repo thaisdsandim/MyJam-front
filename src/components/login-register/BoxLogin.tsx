@@ -1,5 +1,6 @@
 import { FormEvent, useState } from "react";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router";
 import { useDispatch } from "react-redux";
 import { login } from "../../services/login";
 import { setUser } from "../../store/modules/user";
@@ -12,6 +13,7 @@ const BoxLogin = () => {
     const [hidePass, setHidePass] = useState<string>("password");
     const [passeye, setPasseye] = useState<string>("https://icongr.am/fontawesome/eye.svg?size=16&color=88898a");
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     const handleLogin = async (event: FormEvent) => {
         event.preventDefault();
@@ -29,9 +31,6 @@ const BoxLogin = () => {
           if (!password) {
             return alert("Preencha a senha!")
           }
-          if (response.status !== 404) {
-            return alert(response.data);
-          } 
           else {
             console.log(response.data);
             dispatch(
@@ -40,6 +39,7 @@ const BoxLogin = () => {
                 email,
               })
             );
+            navigate("/listadelicoes");
           }
         } catch (error) {
           alert("Verifique os dados digitados!");
