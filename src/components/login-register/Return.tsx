@@ -5,8 +5,8 @@ export function Return() {
     return (
         <BoxReturn>
             <div>
-                <Link to={'/'}><img src="src/assets/login-register/seta.svg" className="link"/></Link>
-                <img src="src/assets/login-register/logo.svg" className="logo"/>
+                <Link to={'/'}><img src="src/assets/images/login-register/seta.png" className="link"/></Link>
+                <img src="src/assets/images/login-register/logo.png" className="logo"/>
             </div>
         </BoxReturn>
     );

@@ -11,7 +11,7 @@ export function Login() {
                 <BoxLogin />
             </div>
             <div className="imgLogin">
-                <img src="src/assets/login-register/login.png" />
+                <img src="src/assets/images/login-register/login.png" />
             </div>
         </Box>
     );

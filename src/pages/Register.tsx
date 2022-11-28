@@ -11,7 +11,7 @@ export function Register() {
                 <BoxRegister />
             </div>
             <div className="imgLogin">
-                <img src="src/assets/login-register/register.png" />
+                <img src="src/assets/images/login-register/register.png" />
             </div>
         </Box2>
     );
