@@ -25,7 +25,14 @@ const BoxLogin = () => {
           const response = await login(payload);
           if (response.status !== 200) {
             return alert("erro no seu login");
-          } else {
+          } 
+          if (!email) {
+            return alert("Preencha o email!")
+          }
+          if (!password) {
+            return alert("Preencha a senha!")
+          }
+          else {
             console.log(response.data);
             dispatch(
               setUser({
@@ -35,7 +42,7 @@ const BoxLogin = () => {
             );
           }
         } catch (error) {
-          alert("Ocorreu um erro ao tentar fazer login!");
+          alert("Verifique os dados digitados!");
         }
     };
 
@@ -49,7 +56,6 @@ const BoxLogin = () => {
                         id="email"
                         type="email" 
                         placeholder="seuemail@site.com"
-                        required
                         value={email}
                         onChange={(event) => setEmail(event.target.value)}
                     />
@@ -59,8 +65,6 @@ const BoxLogin = () => {
                         id="password"
                         type={hidePass}
                         placeholder="Senha"
-                        min={6}
-                        required
                         value={password}
                         onChange={(event) => setPassword(event.target.value)}
                     />
