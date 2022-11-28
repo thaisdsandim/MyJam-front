@@ -24,8 +24,8 @@ const BoxRegister = () => {
 
       try {
         const response = await cadastroUsuario(payload);
-        if (response.status !== 201) {
-          return alert("Ocorreu um erro!")
+        if (response.status !== 200) {
+          return alert(response.data)
         }
         if (!userName) {
             return alert("Preencha o nome corretamente!")
@@ -39,7 +39,6 @@ const BoxRegister = () => {
         if (password.length < 6) {
             return alert("A senha deve conter no mínimo 6 caracteres!")
         }
-        navigate("/onboarding");
       } catch (error) {
         alert("Ocorreu um erro ao tentar fazer cadastro!");
       }

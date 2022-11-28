@@ -23,8 +23,8 @@ const BoxLogin = () => {
     
         try {
           const response = await login(payload);
-          if (response.status !== 200) {
-            return alert("erro no seu login");
+          if (response.status !== 404) {
+            return alert(response.data);
           } 
           if (!email) {
             return alert("Preencha o email!")
@@ -34,7 +34,6 @@ const BoxLogin = () => {
           }
           else {
             console.log(response.data);
-            alert(response.data)
             dispatch(
               setUser({
                 token: response.data.token,
