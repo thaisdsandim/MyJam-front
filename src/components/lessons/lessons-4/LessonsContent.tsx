@@ -9,6 +9,7 @@ interface LessonContainerProps {
   description: string;
   buttonTitle?: string[];
   onClick: () => void;
+  onClickBack?:() => void;
   page: number;
   title: string;
   cipherName: string;
@@ -74,7 +75,7 @@ export function LessonsContent(props: LessonContainerProps) {
       <hr className="line-bottom" />
       <div className="d-flex">
         <div>
-          <LessonsVoltar>Voltar</LessonsVoltar>
+          <LessonsVoltar onClick={props.onClickBack}>Voltar</LessonsVoltar>
         </div>
         {props?.buttonTitle?.map((item, index) => (
           <LessonsButton

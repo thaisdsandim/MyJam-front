@@ -13,20 +13,19 @@ html {
   height: 100vh;
   margin: 0 auto;
   padding: 0;
-  
+
   /* background-image: url("src/assets/images/background.png") ;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   opacity: 0.9; */
 }
-body{
+body {
+  background-image: url("src/assets/images/fundo-musical.png");
   background-color: #222b35;
-  background-image: url("src/assets/images/backgroundD.png") ;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  
 }
 button {
   font-family: "Roboto", sans-serif;

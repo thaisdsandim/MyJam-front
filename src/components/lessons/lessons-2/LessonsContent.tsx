@@ -60,7 +60,7 @@ export function LessonsHome(props: LessonsContentProps) {
         src={props.image}
         alt="Fingers on the guitar"
       />
-      <p className="info-text" style={{ display: props.text }}>
+      <p className="info-text" style={{ display: props.text,   }}>
         As cordas do violão são contadas de baixo pra cima. Da mais fina pra a
         mais grossa.
       </p>

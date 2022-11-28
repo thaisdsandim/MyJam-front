@@ -75,25 +75,6 @@ export const LessonContainer = styled.div`
     margin-bottom: 30px;
   }
 
-  .bg-image {
-    /* The image used */
-    /* background-image: url("../../../assets/lessons/finish.png"); */
-
-    /* Add the blur effect */
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
-
-    /* Full height */
-    height: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .title-page-buttons{
-    margin: 60px 0px 60px 0px;
-  }
 `;
 
 export const FinishContainer = styled.div`

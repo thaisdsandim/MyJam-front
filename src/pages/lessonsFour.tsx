@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router";
 import Cifra1 from "../assets/lessons/cifra-1.png";
 import Cifra2 from "../assets/lessons/cifra-2.png";
 import Cifra3 from "../assets/lessons/cifra-3.png";
@@ -11,10 +12,16 @@ import { LessonContainer } from "../components/lessons/lessons-4/LessonsContaine
 export function LessonsFour() {
   const [page, setPage] = useState(0);
   const [isFinish, setIsFinish] = useState(false);
+  const navigate = useNavigate();
 
   function previousPage() {
     setPage(page - 1);
   }
+
+  const navigateToLessons = () => {
+    // 👇️ navigate to /contacts
+    navigate('/listadelicoes');
+  };
 
   function nextPage() {
     setPage(page + 1);
@@ -40,6 +47,7 @@ export function LessonsFour() {
         <LessonsContent
           page={page}
           onClick={nextPage}
+          onClickBack={navigateToLessons}
           title="Pratique"
           buttonTitle={["Entendi"]}
           description="Pratique, Nota: Dó Maior"
@@ -52,6 +60,7 @@ export function LessonsFour() {
         <LessonsContent
           page={page}
           onClick={nextPage}
+          onClickBack={previousPage}
           title="Pratique"
           buttonTitle={["Entendi"]}
           description="Pratique, Nota: Sol Maior?"
@@ -64,10 +73,11 @@ export function LessonsFour() {
         <LessonsContent
           page={page}
           onClick={nextPage}
+          onClickBack={previousPage}
           title="Pratique"
           buttonTitle={["Entendi"]}
           description="Pratique, Nota: Lá Menor"
-          image={Cifra3}
+          image={Cifra4}
           cipherName="Am (Lá Menor)"
         />
       )}
@@ -76,10 +86,11 @@ export function LessonsFour() {
         <LessonsContent
           page={page}
           onClick={nextPage}
+          onClickBack={previousPage}
           title="Pratique"
           buttonTitle={["Entendi"]}
           description="Pratique, Nota: Fá Maior"
-          image={Cifra4}
+          image={Cifra3}
           cipherName="F (Fá Maior)"
         />
       )}

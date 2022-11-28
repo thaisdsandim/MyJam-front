@@ -66,7 +66,7 @@ export function LessonsTwo() {
             { color: "#A5D9F6", infoTitle: "Dedo 2" },
             { color: "#FDCD65", infoTitle: "Dedo 3" },
             { color: "#CC5740", infoTitle: "Dedo 4" },
-            { color: "#A667CE", infoTitle: "Dedo 5" },
+            { color: "#A667CE", infoTitle: "Polegar" },
           ]}
         />
       )}
