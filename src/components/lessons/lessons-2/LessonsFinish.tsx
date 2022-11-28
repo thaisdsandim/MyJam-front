@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FinishContainer } from ".././lessons-1/LessonsContainer";
-import Bg from "../../../assets/lessons/finish.png";
+import Bg from "../../../assets/lessons/finish2.png";
 import Overlay from "../../../assets/lessons/overlay-end.png";
 import { LessonsButton } from ".././LessonsButton";
 
