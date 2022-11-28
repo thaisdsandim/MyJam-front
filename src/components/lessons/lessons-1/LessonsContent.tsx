@@ -5,7 +5,7 @@ import { ButtonLg } from "./ButtonLg";
 import { FinishContainer } from "./LessonsContainer";
 
 interface LessonsContentProps {
-  image: string;
+  image?: string;
   description: string;
   buttonTitle?: string[];
   onClick: () => void;

@@ -16,6 +16,7 @@ export const LessonsButton = styled.button`
   background-clip: padding-box, border-box;
   box-shadow: 0px 0px 2px 0px #8321b1;
   -webkit-box-shadow: 0px 2px #8321b1;
+ 
 
   &:hover {
     opacity: 0.8;

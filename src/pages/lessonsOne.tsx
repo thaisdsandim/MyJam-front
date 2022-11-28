@@ -1,6 +1,7 @@
-import Hand from "../assets/lessons/hand-position-1.png";
-import Guitar from "../assets/lessons/h-guitar.png";
 import { useState } from "react";
+import { useNavigate } from "react-router";
+import Image1 from "../assets/lessons/lesson1-1.png";
+import Image2 from "../assets/lessons/lesson1-2.png";
 import { LessonsFinish } from "../components/lessons/lessons-1/LessonsFinish";
 import {
   LessonsContent,
@@ -13,10 +14,16 @@ import { LessonContainer } from "../components/lessons/lessons-1/LessonsContaine
 export function Lessons() {
   const [page, setPage] = useState(0);
   const [isFinish, setIsFinish] = useState(false);
+  const navigate = useNavigate();
 
   function previousPage() {
     setPage(page - 1);
   }
+
+  const navigateToLessons = () => {
+    // 👇️ navigate to /contacts
+    navigate('/listadelicoes');
+  };
 
   function nextPage() {
     setPage(page + 1);
@@ -56,7 +63,7 @@ export function Lessons() {
           title="Qual é o nome dessa parte?"
           buttonTitle={["Cabeçote", "Braço", "Tarraxa"]}
           description="Qual é o nome dessa parte?"
-          image={Guitar}
+          image={Image1}
         />
       )}
 
@@ -64,10 +71,9 @@ export function Lessons() {
         <LessonsContentButtons
           page={page}
           onClick={nextPage}
-          title="Qual é esta corda?"
-          buttonTitle={["3", "6", "1"]}
-          description="Qual é esta corda?"
-          image=""
+          title="Qual parte divide as notas e casas?"
+          buttonTitle={["Traste", "Cabeçote", "Braço"]}
+          description="Qual parte divide as notas e casas?"
         />
       )}
 
@@ -75,10 +81,9 @@ export function Lessons() {
         <LessonsContentButtons
           page={page}
           onClick={nextPage}
-          title="Qual dedo está na corda 2?"
-          buttonTitle={["1", "2", "4"]}
-          description="Qual dedo está na corda 2?"
-          image=""
+          title="Qual parte define as notas?"
+          buttonTitle={["Casa", "Traste", "Braço"]}
+          description="Qual parte define as notas?"
         />
       )}
 
@@ -86,14 +91,10 @@ export function Lessons() {
         <LessonsContent
           page={page}
           onClick={nextPage}
-          title="Em qual corda e casa está o dedo 4?"
-          buttonTitle={[
-            "Corda 2, casa 5",
-            "Corda 5, casa 2",
-            "Corda 6, casa 3",
-          ]}
-          description="Em qual corda e casa está o dedo 4?"
-          image={Guitar}
+          title="Qual parte está circulada?"
+          buttonTitle={["Cabeçote", "Casa", "Tarraxa"]}
+          description="Qual parte está circulada?"
+          image={Image2}
         />
       )}
     </LessonContainer>

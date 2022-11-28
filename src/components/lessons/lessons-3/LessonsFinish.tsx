@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FinishContainer } from ".././lessons-1/LessonsContainer";
-import Bg from "../../../assets/lessons/finish.png";
+import Bg from "../../../assets/lessons/finish3.png";
 import Overlay from "../../../assets/lessons/overlay-end.png";
 import { LessonsButton } from ".././LessonsButton";
 
@@ -13,7 +13,7 @@ export function LessonsFinish() {
       <div className="front-image d-flex flex-column">
         <img src={Overlay}></img>
         <div className="d-flex finish-button">
-          <Link to={"/lessons/2"}>
+          <Link to={"/listadelicoes"}>
             <LessonsButton>Voltar pra lições</LessonsButton>
           </Link>
           <Link to={"/lessons/4"}>
