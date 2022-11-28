@@ -23,15 +23,15 @@ const BoxLogin = () => {
     
         try {
           const response = await login(payload);
-          if (response.status !== 404) {
-            return alert(response.data);
-          } 
           if (!email) {
             return alert("Preencha o email!")
           }
           if (!password) {
             return alert("Preencha a senha!")
           }
+          if (response.status !== 404) {
+            return alert(response.data);
+          } 
           else {
             console.log(response.data);
             dispatch(
