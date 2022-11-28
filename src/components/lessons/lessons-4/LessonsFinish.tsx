@@ -16,9 +16,6 @@ export function LessonsFinish() {
           <Link to={"/listadelicoes"}>
             <LessonsButton>Voltar pra lições</LessonsButton>
           </Link>
-          <Link to={"/acompanhamento"}>
-            <LessonsButton>Próxima lição</LessonsButton>
-          </Link>
         </div>
       </div>
     </FinishContainer>
