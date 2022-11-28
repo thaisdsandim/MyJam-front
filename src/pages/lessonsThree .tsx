@@ -44,7 +44,7 @@ export function LessonsThree() {
           page={page}
           onClick={nextPage}
           title="Como ler a tal da cifra?"
-          buttonTitle={["Endenti"]}
+          buttonTitle={["Entendi"]}
           description="Como ler a tal da cifra?"
           image=""
         />
@@ -55,7 +55,7 @@ export function LessonsThree() {
           page={page}
           onClick={nextPage}
           title="Qual a posição do dedo 2?"
-          buttonTitle={["2", "3", "4"]}
+          buttonTitle={["Corda 3, Casa 4", "Corda 4, Casa 2", "Corda 2, Casa 1"]}
           description="Qual a posição do dedo 2?"
           image={Cifra1}
         />
@@ -66,7 +66,7 @@ export function LessonsThree() {
           page={page}
           onClick={nextPage}
           title="Quantos dedos são usados nesse acorde?"
-          buttonTitle={["2", "4", "1"]}
+          buttonTitle={["2", "3", "4"]}
           description="Quantos dedos são usados nesse acorde?"
           image={Cifra2}
         />
@@ -77,7 +77,7 @@ export function LessonsThree() {
           page={page}
           onClick={nextPage}
           title="Qual é a casa em que ficam os dedos 2 e 3?"
-          buttonTitle={["2", "2", "3"]}
+          buttonTitle={["2", "4", "1"]}
           description="Qual é a casa em que ficam os dedos 2 e 3?"
           image={Cifra3}
         />
@@ -89,9 +89,9 @@ export function LessonsThree() {
           onClick={nextPage}
           title="Qual corda você vai apertar com o dedo 1?"
           buttonTitle={[
-            "Corda 2, casa 5",
-            "Corda 5, casa 2",
-            "Corda 6, casa 3",
+            "6",
+            "2",
+            "3",
           ]}
           description="Qual corda você vai apertar com o dedo 1?"
           image={Cifra4}
