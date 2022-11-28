@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
+import Image0 from "../assets/lessons/lesson1-0.png";
 import Image1 from "../assets/lessons/lesson1-1.png";
 import Image2 from "../assets/lessons/lesson1-2.png";
 import { LessonsFinish } from "../components/lessons/lessons-1/LessonsFinish";
@@ -22,7 +23,7 @@ export function Lessons() {
 
   const navigateToLessons = () => {
     // 👇️ navigate to /contacts
-    navigate('/listadelicoes');
+    navigate("/listadelicoes");
   };
 
   function nextPage() {
@@ -52,7 +53,7 @@ export function Lessons() {
           title="As partes do violão"
           buttonTitle={[]}
           description="As partes do violão"
-          image=""
+          image={Image0}
         />
       )}
 

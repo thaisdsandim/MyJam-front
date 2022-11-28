@@ -44,7 +44,7 @@ export function OnBoardingFinish({
       <div className="front-image d-flex flex-column">
         <img src={OnboardingAnimation}></img>
         <div className="d-flex finish-button">
-          <Link to={"/lessons/3"}>
+          <Link to={"/listadelicoes"}>
             <OnboardingButton onClick={sendAnswers}>Finalizar</OnboardingButton>
           </Link>
         </div>

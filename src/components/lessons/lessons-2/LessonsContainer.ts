@@ -29,10 +29,13 @@ export const LessonContainer = styled.div`
   }
   .info-text{
     margin-top: 50px;
+    font-weight: 700;
+    font-size: 20px;
   }
   .info-content{
     margin-top: 40px;
     gap: 50px;
+   
   }
   .progress {
     height: 25px;
