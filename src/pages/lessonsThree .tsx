@@ -79,7 +79,7 @@ export function LessonsThree() {
           title="Qual é a casa em que ficam os dedos 2 e 3?"
           buttonTitle={["2", "4", "1"]}
           description="Qual é a casa em que ficam os dedos 2 e 3?"
-          image={Cifra3}
+          image={Cifra4}
         />
       )}
 
@@ -94,7 +94,7 @@ export function LessonsThree() {
             "3",
           ]}
           description="Qual corda você vai apertar com o dedo 1?"
-          image={Cifra4}
+          image={Cifra3}
         />
       )}
     </LessonContainer>

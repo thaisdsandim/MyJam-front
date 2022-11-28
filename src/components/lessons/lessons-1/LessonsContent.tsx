@@ -53,7 +53,7 @@ export function LessonsHome(props: LessonsContentProps) {
           <div className="">
             <img
               className="img-home"
-              src={Guitar}
+              src={props.image}
               alt="Fingers on the guitar"
             />
           </div>
