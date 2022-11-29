@@ -13,11 +13,11 @@
 
 ## :hammer: Functionalities
 
-- `1`: 
-- `2`: 
-- `3`: 
-- `4`: 
-- `5`: 
+- `1`: User registration and login
+- `2`: User preferences
+- `3`: User dashboard
+- `4`: Lessons
+- `5`: Lessons learned
 
 ## 📁 Project access
 
@@ -38,9 +38,9 @@ You can access the notion [here](https://www.notion.so/Big-Boss-Grupo-2-4dac3166
 
 ```bash
   # Clone the repository
-  ❯ git clone https://github.com/GustavoCarv/DAGBIE.git
-  # Enter directory
-  ❯ cd DAGBIE
+  ❯ git clone https://github.com/thaisdsandim/MyJam-front.git
+  # Entrar no diretório
+  ❯ cd MyJam-front
 ```
 
 - To install the dependencies and run the project, you can use npm or yarn:
@@ -58,18 +58,19 @@ You can access the notion [here](https://www.notion.so/Big-Boss-Grupo-2-4dac3166
 
 ```bash
   # Install the dependencies
-  ❯ yarn
+  ❯ npm install
   # Run the project
-  ❯ yarn dev
+  ❯ npm start
 ```
 
 
 ## ✔️ Tools used
 
-<a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="css" width="40" height="40"/> </a>
-<a href="https://www.figma.com/files/recent?fuid=1054783839438239746"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="figma" width="40" height="40"/> </a>
-<a href="https://git-scm.com/"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="git" width="40" height="40"/> </a> 
-<a href="https://nodejs.org/en/"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="node" width="40" height="40"/> </a> <a href="https://www.npmjs.com/"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="npm" width="40" height="40"/> </a> <a href="https://pt-br.reactjs.org/"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="react" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> 
+<a href="https://axios-http.com/assets/logo.svg"> <img src="https://axios-http.com/assets/logo.svg" alt="axios" width="40" height="40"/> </a> <a href="https://getbootstrap.com/"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="bootstrap" width="40" height="40"/> </a>
+<a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="css" width="40" height="40"/> </a> <a href="https://www.figma.com/files/recent?fuid=1054783839438239746"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="figma" width="40" height="40"/> </a>
+<a href="https://git-scm.com/"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="git" width="40" height="40"/> </a> <a href="https://nodejs.org/en/"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="node" width="40" height="40"/> </a> <a href="https://www.npmjs.com/"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt="npm" width="40" height="40"/> </a>
+<a href="https://pt-br.reactjs.org/"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="react" width="40" height="40"/> </a>
+<a href="https://redux.js.org/"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/> </a>  <a href="https://styled-components.com/"> <img src="https://styled-components.com/logo.png" alt="styled-components" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/"> <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://vitejs.dev/"> <img src="https://vitejs.dev/logo-with-shadow.png" alt="vite" width="40" height="40"/> </a>
 
 
 ## 👨‍👨‍👧 Collaborators
