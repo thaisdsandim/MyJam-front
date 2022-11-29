@@ -1,12 +1,14 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import Seta from "../../assets/images/login-register/seta.png";
+import Logo from "../../assets/images/login-register/logo.png";
 
 export function Return() {
     return (
         <BoxReturn>
             <div>
-                <Link to={'/'}><img src="src/assets/images/login-register/seta.png" className="link"/></Link>
-                <img src="src/assets/images/login-register/logo.png" className="logo"/>
+                <Link to={'/'}><img src={Seta} className="link"/></Link>
+                <img src={Logo} className="logo"/>
             </div>
         </BoxReturn>
     );
