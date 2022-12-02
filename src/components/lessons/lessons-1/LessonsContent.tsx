@@ -7,6 +7,7 @@ interface LessonsContentProps {
   description: string;
   buttonTitle?: string[];
   onClick: (index?:number) => void;
+  onClickBack?:() => void;
   page: number;
   title: string;
 }
@@ -109,8 +110,8 @@ export function LessonsHome(props: LessonsContentProps) {
   );
 }
 export function LessonsContentButtons(props: LessonsContentProps) {
-  function HandleOnClick(text: any) {
-    props.onClick();
+  function HandleOnClick(index: number) {
+    props.onClick(index);
   }
   return (
     <>
@@ -119,7 +120,7 @@ export function LessonsContentButtons(props: LessonsContentProps) {
 
       <div className="col-md-2 d-flex flex-column gap-5 align-items-center">
         {props?.buttonTitle?.map((item, index) => (
-          <ButtonLg key={index} onClick={() => HandleOnClick(item)}>
+          <ButtonLg key={index} onClick={() => HandleOnClick(index)}>
             {item}
           </ButtonLg>
         ))}
