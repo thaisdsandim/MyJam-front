@@ -80,8 +80,8 @@ export function LessonsFour() {
           buttonTitle={["Entendi"]}
           description="Pratique, Nota: Lá Menor"
           image={Cifra4}
-          cipherName="https://autochords.com/assets/audio/guitar/627.minor.mp3"
-          url=""
+          cipherName="Am (Lá Menor)"
+          url="https://autochords.com/assets/audio/guitar/627.minor.mp3"
         />
       )}
 
