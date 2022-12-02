@@ -31,7 +31,7 @@ export function OnBoardingFinish({
         styleId,
         learnId,
       };
-      await api.post(`users_questions/${id}`, {
+      await api.post("users_questions/", {
         body: payload,
       });
       console.log(payload);

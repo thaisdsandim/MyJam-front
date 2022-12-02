@@ -1,21 +1,19 @@
-import Guitar from "../../../assets/lessons/v-guitar.png";
-import Bg from "../../../assets/lessons/finish.png";
 import { LessonsButton, LessonsVoltar } from "../LessonsButton";
 import { ButtonLg } from "./ButtonLg";
-import { FinishContainer } from "./LessonsContainer";
+
 
 interface LessonsContentProps {
   image?: string;
   description: string;
   buttonTitle?: string[];
-  onClick: () => void;
+  onClick: (index?:number) => void;
   page: number;
   title: string;
 }
 
 export function LessonsContent(props: LessonsContentProps) {
-  function HandleOnClick(text: string) {
-    props.onClick();
+  function HandleOnClick(index: number) {
+    props.onClick(index);
   }
 
   return (
@@ -26,10 +24,10 @@ export function LessonsContent(props: LessonsContentProps) {
       <hr className="line-bottom" />
       <div className="d-flex">
         {props?.buttonTitle?.map((item, index) => (
-          <LessonsButton
+          <LessonsButton 
             className="rounded-corners-gradient-borders"
             key={index}
-            onClick={() => HandleOnClick(item)}
+            onClick={() => HandleOnClick(index)}
           >
             {item}
           </LessonsButton>

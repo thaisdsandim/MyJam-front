@@ -8,14 +8,14 @@ interface LessonContainerProps {
   image: string;
   description: string;
   buttonTitle?: string[];
-  onClick: () => void;
+  onClick: (index?:number) => void;
   page: number;
   title: string;
 }
 
 export function LessonsContent(props: LessonContainerProps) {
-  function HandleOnClick(text: string) {
-    props.onClick();
+  function HandleOnClick(index: number) {
+    props.onClick(index);
   }
 
   return (
@@ -30,7 +30,7 @@ export function LessonsContent(props: LessonContainerProps) {
           <LessonsButton
             className="rounded-corners-gradient-borders"
             key={index}
-            onClick={() => HandleOnClick(item)}
+            onClick={() => HandleOnClick(index)}
           >
             {item}
           </LessonsButton>

@@ -26,7 +26,19 @@ export function Lessons() {
     navigate("/listadelicoes");
   };
 
+  function checkAnswer(index:number, correctIndex:number) {
+    console.log(index, correctIndex)
+
+    if(index === correctIndex){
+      nextPage()
+    }else{
+      alert("Resposta incorreta, tente novamente")
+    }
+    
+  }
+
   function nextPage() {
+   
     setPage(page + 1);
 
     if (page >= 4) {
@@ -34,6 +46,7 @@ export function Lessons() {
 
       setTimeout(() => setIsFinish(true), 1000);
     }
+
   }
 
   if (isFinish) {
@@ -60,7 +73,7 @@ export function Lessons() {
       {page === 1 && (
         <LessonsContent
           page={page}
-          onClick={nextPage}
+          onClick={(e )=>checkAnswer(Number(e),1)}
           title="Qual é o nome dessa parte?"
           buttonTitle={["Cabeçote", "Braço", "Tarraxa"]}
           description="Qual é o nome dessa parte?"
@@ -71,7 +84,7 @@ export function Lessons() {
       {page === 2 && (
         <LessonsContentButtons
           page={page}
-          onClick={nextPage}
+          onClick={(e )=>checkAnswer(Number(e),0)}
           title="Qual parte divide as notas e casas?"
           buttonTitle={["Traste", "Cabeçote", "Braço"]}
           description="Qual parte divide as notas e casas?"
@@ -81,7 +94,7 @@ export function Lessons() {
       {page === 3 && (
         <LessonsContentButtons
           page={page}
-          onClick={nextPage}
+          onClick={(e )=>checkAnswer(Number(e),0)}
           title="Qual parte define as notas?"
           buttonTitle={["Casa", "Traste", "Braço"]}
           description="Qual parte define as notas?"
@@ -91,7 +104,7 @@ export function Lessons() {
       {page === 4 && (
         <LessonsContent
           page={page}
-          onClick={nextPage}
+          onClick={(e )=>checkAnswer(Number(e),2)}
           title="Qual parte está circulada?"
           buttonTitle={["Cabeçote", "Casa", "Tarraxa"]}
           description="Qual parte está circulada?"

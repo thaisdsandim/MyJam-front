@@ -1,6 +1,8 @@
 import { Howl } from "howler";
 import CipherIcon from "../../../assets/lessons/cifra-icone.png";
-import Do from "../../../assets/audios/do.wav";
+import F from "../../../assets/audios/do.wav";
+import G from "../../../assets/audios/do.wav";
+import Am from "../../../assets/audios/do.wav";
 import { LessonsButton, LessonsVoltar } from "../LessonsButton";
 
 
@@ -13,22 +15,23 @@ interface LessonContainerProps {
   page: number;
   title: string;
   cipherName: string;
+  url: string,
 }
-const song = [
-  {
-    sound:
-      "https://d7d3471nr939s.cloudfront.net/PureAcousticGuitar_Noiiz/MP3/One+Shots/Acoustic+Guitar/C_add9StrumGuitar_01_526.mp3?cb=afb9abe4-05c9-439a-a501-785da02a0c8c",
-  },
-];
+// const song = [
+//   {
+//     sound:
+//       "https://d7d3471nr939s.cloudfront.net/PureAcousticGuitar_Noiiz/MP3/One+Shots/Acoustic+Guitar/C_add9StrumGuitar_01_526.mp3?cb=afb9abe4-05c9-439a-a501-785da02a0c8c",
+//   },
+// ];
 
 export function LessonsContent(props: LessonContainerProps) {
   function HandleOnClick(text: string) {
     props.onClick();
   }
 
-  function playAudio(src: string) {
+  function playAudio() {
     let audio = new Howl({
-      src,
+      src: props.url,
       html5: true,
     });
     audio.play();
@@ -53,16 +56,16 @@ export function LessonsContent(props: LessonContainerProps) {
             <li>Use o dedão como apoio pra reduzir o esforço</li>
           </ol>
           <div className="d-flex justify-content-center">
-            {song.map((snd, index) => {
-              return (
-                <LessonsButton key={index} onClick={() => playAudio(snd.sound)}>
+            {/* {song.map((snd, index) => {
+              return ( */}
+                <LessonsButton  onClick={playAudio}>
                   Tocar Nota
                   <span>
                     <img src={CipherIcon} style={{ marginLeft: "10px" }} />
                   </span>
                 </LessonsButton>
-              );
-            })}
+              {/* );
+            })} */}
           </div>
         </div>
       </div>
