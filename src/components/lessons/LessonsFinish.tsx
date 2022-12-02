@@ -5,7 +5,11 @@ import Overlay from "../../assets/lessons/overlay-end.png";
 import { LessonsButton } from "./LessonsButton";
 
 
-export function LessonsFinish() {
+interface LessonsFinishProps {
+  page: string,
+}
+
+export function LessonsFinish(props:LessonsFinishProps) {
   return (
     <FinishContainer>
       <div className="bg-image">
@@ -17,7 +21,7 @@ export function LessonsFinish() {
           <Link to={"/listadelicoes"}>
             <LessonsButton>Voltar pra lições</LessonsButton>
           </Link>
-          <Link to={"/lessons/3"}>
+          <Link to={`/lessons/${props.page}`}>
           <LessonsButton>Próxima lição</LessonsButton>
           </Link>
         </div>

@@ -1,5 +1,8 @@
 import { FormEvent, useState } from "react";
+import { useNavigate } from "react-router";
+import { useDispatch } from "react-redux";
 import { Button, Input, RegisterBox } from "./Box.style";
+import { setUser } from "../../store/modules/user";
 import { cadastroUsuario } from "../../services/CadastroUsuarios";
 import "./login-register.css";
 
@@ -9,6 +12,8 @@ const BoxRegister = () => {
     const [password, setPassword] = useState<string>("")
     const [hidePass, setHidePass] = useState<string>("password");
     const [passeye, setPasseye] = useState<string>("https://icongr.am/fontawesome/eye.svg?size=16&color=88898a");
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     const cadastro = async (event: FormEvent) =>{
       event.preventDefault()
@@ -21,12 +26,30 @@ const BoxRegister = () => {
 
       try {
         const response = await cadastroUsuario(payload);
-        if (response.status !== 201) {
-          return alert("Ocorreu um erro!")
+        if (!userName) {
+            return alert("Preencha o nome corretamente.")
         }
-        alert("Cadastro efetuado com sucesso!");
+        if (!email) {
+            return alert("Preencha o email corretamente.")
+        }
+        if (!password) {
+            return alert("Preencha a senha corretamente.")
+        }
+        if (password.length < 6) {
+            return alert("A senha deve conter no mínimo 6 caracteres.")
+        }
+        else {
+            console.log(response.data);
+            dispatch(
+              setUser({
+                token: response.data.token,
+                email,
+              })
+            );
+            navigate("/onboarding")
+          }
       } catch (error) {
-        alert("Ocorreu um erro ao tentar fazer cadastro!");
+        alert("Verifique os dados digitados.");
       }
     }
 
@@ -39,7 +62,6 @@ const BoxRegister = () => {
                     <Input 
                         type="text" 
                         placeholder="Nome/Nome Social"
-                        required
                         value={userName} 
                         onChange={(event) => setuserName(event.target.value)}
                     />
@@ -48,7 +70,6 @@ const BoxRegister = () => {
                         id="email"
                         type="email" 
                         placeholder="seuemail@site.com"
-                        required
                         value={email} 
                         onChange={(event) => setEmail(event.target.value)}
                     />
@@ -58,8 +79,6 @@ const BoxRegister = () => {
                         id="password"
                         type={hidePass}
                         placeholder="Min. 6 caracteres"
-                        required
-                        min={6}
                         value={password}
                         onChange={(event) => setPassword(event.target.value)}
                     />

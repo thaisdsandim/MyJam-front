@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Background from "../../assets/images/background2.png";
 import OnboardingAnimation from "../../assets/onboarding/onboarding-animation.png";
 import { FinishContainer } from "./Onboarding.style";
@@ -20,6 +21,7 @@ export function OnBoardingFinish({
   practiceId,
   styleId,
 }: OnBoardingFinishProps) {
+  const id = useParams();
   async function sendAnswers() {
     try {
       const payload = {
