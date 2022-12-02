@@ -100,7 +100,9 @@ export function LessonsHome(props: LessonsContentProps) {
 
       <hr className="line-bottom-home" />
       <div>
-        <LessonsVoltar>Voltar</LessonsVoltar>
+        <LessonsVoltar onClick={props.onClickBack}>
+          Voltar
+        </LessonsVoltar>
         <LessonsButton onClick={() => HandleOnClick(props.onClick)}>
           Entendi
         </LessonsButton>
