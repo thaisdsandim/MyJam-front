@@ -5,9 +5,7 @@ import Cifra2 from "../assets/lessons/cifra-2.png";
 import Cifra3 from "../assets/lessons/cifra-3.png";
 import Cifra4 from "../assets/lessons/cifra-4.png";
 import { LessonsFinish } from "../components/lessons/lessons-4/LessonsFinish";
-import {
-  LessonsContent,
-} from "../components/lessons/lessons-4/LessonsContent";
+import { LessonsContent } from "../components/lessons/lessons-4/LessonsContent";
 import { MyJamBar } from "../components/progressBar/MyJamBar";
 import { LessonContainer } from "../components/lessons/lessons-4/LessonsContainer";
 
@@ -22,7 +20,7 @@ export function LessonsFour() {
 
   const navigateToLessons = () => {
     // 👇️ navigate to /contacts
-    navigate('/listadelicoes');
+    navigate("/listadelicoes");
   };
 
   function nextPage() {
@@ -55,6 +53,7 @@ export function LessonsFour() {
           description="Pratique, Nota: Dó Maior"
           image={Cifra1}
           cipherName="C (Dó Maior)"
+          url="https://autochords.com/assets/audio/guitar/1050.major.mp3"
         />
       )}
 
@@ -68,6 +67,7 @@ export function LessonsFour() {
           description="Pratique, Nota: Sol Maior?"
           image={Cifra2}
           cipherName="G (Sol Maior)"
+          url="https://autochords.com/assets/audio/guitar/704.major.mp3"
         />
       )}
 
@@ -80,7 +80,8 @@ export function LessonsFour() {
           buttonTitle={["Entendi"]}
           description="Pratique, Nota: Lá Menor"
           image={Cifra4}
-          cipherName="Am (Lá Menor)"
+          cipherName="https://autochords.com/assets/audio/guitar/627.minor.mp3"
+          url=""
         />
       )}
 
@@ -94,9 +95,9 @@ export function LessonsFour() {
           description="Pratique, Nota: Fá Maior"
           image={Cifra3}
           cipherName="F (Fá Maior)"
+          url="https://autochords.com/assets/audio/guitar/790.major.mp3"
         />
       )}
-
     </LessonContainer>
   );
 }

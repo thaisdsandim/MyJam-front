@@ -1,14 +1,12 @@
-import Hand from "../../../assets/lessons/hand-position-1.png";
-
 import { InfoLesson } from "./InfoLesson";
 import { LessonsButton, LessonsVoltar } from "../LessonsButton";
-import { Link } from "react-router-dom";
+
 
 interface LessonsContentProps {
   image: string;
   description: string;
   buttonTitle?: string[];
-  onClick: () => void;
+  onClick: (index?:number) => void;
   onClickBack?: () => void;
   page: number;
   title: string;
@@ -21,8 +19,8 @@ interface LessonsContentProps {
 }
 
 export function LessonsContent(props: LessonsContentProps) {
-  function HandleOnClick(text: string) {
-    props.onClick();
+  function HandleOnClick(index: number) {
+    props.onClick(index);
   }
 
   return (
@@ -36,7 +34,7 @@ export function LessonsContent(props: LessonsContentProps) {
           <LessonsButton
             className="rounded-corners-gradient-borders"
             key={index}
-            onClick={() => HandleOnClick(item)}
+            onClick={() => HandleOnClick(index)}
           >
             {item}
           </LessonsButton>

@@ -30,6 +30,17 @@ export function LessonsTwo() {
     navigate('/listadelicoes');
   };
 
+  function checkAnswer(index:number, correctIndex:number) {
+    console.log(index, correctIndex)
+
+    if(index === correctIndex){
+      nextPage()
+    }else{
+      alert("Resposta incorreta, tente novamente")
+    }
+    
+  }
+
   function nextPage() {
     setPage(page + 1);
 
@@ -109,7 +120,7 @@ export function LessonsTwo() {
       {page === 3 && (
         <LessonsContent
           page={page}
-          onClick={nextPage}
+          onClick={(e )=>checkAnswer(Number(e),1)}
           title="Qual é esta casa?"
           buttonTitle={["1", "4", "5"]}
           description="Qual é esta casa?"
@@ -120,7 +131,7 @@ export function LessonsTwo() {
       {page === 4 && (
         <LessonsContent
           page={page}
-          onClick={nextPage}
+          onClick={(e )=>checkAnswer(Number(e),1)}
           title="Qual é esta corda?"
           buttonTitle={["3", "6", "1"]}
           description="Qual é esta corda?"
@@ -130,7 +141,7 @@ export function LessonsTwo() {
       {page === 5 && (
         <LessonsContent
           page={page}
-          onClick={nextPage}
+          onClick={(e )=>checkAnswer(Number(e),2)}
           title="Qual dedo está na corda 2?"
           buttonTitle={["1", "2", "4"]}
           description="Qual dedo está na corda 2?"
@@ -140,7 +151,7 @@ export function LessonsTwo() {
       {page === 6 && (
         <LessonsContent
           page={page}
-          onClick={nextPage}
+          onClick={(e )=>checkAnswer(Number(e),0)}
           title="Em qual corda e casa está o dedo 4?"
           buttonTitle={[
             "Corda 2, casa 5",

@@ -5,6 +5,7 @@ import { login } from "../../services/login";
 import { setUser } from "../../store/modules/user";
 import { Button, Input, LoginBox } from "./Box.style";
 import "./login-register.css";
+import api from "../../services/api";
 
 const BoxLogin = () => {
     const [email, setEmail] = useState<string>("");
@@ -20,7 +21,7 @@ const BoxLogin = () => {
         try {
            const response = await login ({email, password})
            console.log(response.data.token)
-    
+           api.defaults.headers.common = {'Authorization': `bearer ${response.data.token}`}
            dispatch(
             setUser({
               token: response.data.token,
