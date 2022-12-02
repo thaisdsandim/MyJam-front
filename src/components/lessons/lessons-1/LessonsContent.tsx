@@ -1,13 +1,12 @@
 import { LessonsButton, LessonsVoltar } from "../LessonsButton";
 import { ButtonLg } from "./ButtonLg";
 
-
 interface LessonsContentProps {
   image?: string;
   description: string;
   buttonTitle?: string[];
-  onClick: (index?:number) => void;
-  onClickBack?:() => void;
+  onClick: (index?: number) => void;
+  onClickBack?: () => void;
   page: number;
   title: string;
 }
@@ -25,7 +24,7 @@ export function LessonsContent(props: LessonsContentProps) {
       <hr className="line-bottom" />
       <div className="d-flex">
         {props?.buttonTitle?.map((item, index) => (
-          <LessonsButton 
+          <LessonsButton
             className="rounded-corners-gradient-borders"
             key={index}
             onClick={() => HandleOnClick(index)}
@@ -128,5 +127,3 @@ export function LessonsContentButtons(props: LessonsContentProps) {
     </>
   );
 }
-
-
