@@ -16,7 +16,7 @@ import { RecoverPassword } from "../pages/RecoverPassword";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Onboarding />,
   },
   {
     path: "/login",
